@@ -33,7 +33,7 @@ body{
 
 #valley-overview{
     height: 100vh;
-    background: $coziness-valley-brand-colors-3-hex url('../images/coziness-valley-overview.jpeg') no-repeat fixed center;    
+    background: $coziness-valley-brand-colors-3-hex url('../images/coziness-valley-overview.jpeg') center/cover no-repeat fixed;    
 }
 
 #situation-plan{
