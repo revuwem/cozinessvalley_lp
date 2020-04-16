@@ -44,6 +44,8 @@ $base-light-color: #eee;
   border-radius: $value;
 }
 
+/*Common Document Stylesheets*/
+
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -71,6 +73,24 @@ ul {
 .col-12{
     flex:0;
 }
+
+.list-item{
+    width: 100%;
+}
+
+@media (min-width: 720px) {
+    .list-item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+      .list-item {
+        width: 40%;
+      }
+    }
+
+
 
 /*Stylesheets for sections*/
 section.container-fluid {
@@ -117,19 +137,13 @@ section .row {
 }
 
 .participants-list-item {
-  width: 50%;
-
   h3 {
     font-weight: bold;
     text-transform: uppercase;
   }
 }
 
-@media (max-width: 720px) {
-  .participants-list-item {
-    width: 100%;
-  }
-}
+
 
 a.btn.brand-btn {
   margin: 0;
@@ -146,22 +160,6 @@ a.btn.brand-btn {
   padding: $base-list-padding;
   margin-bottom: $base-list-margin-bottom;
 }
-
-.prizes-list-item {
-  width: 100%;  
-}
-
-@media (min-width: 720px) {
-  .prizes-list-item {
-    width: 40%;
-  }
-}
-
-@media (min-width: 1200px) {
-    .prizes-list-item {
-      width: 30%;
-    }
-  }
 
 
 /*Prizes table styles*/

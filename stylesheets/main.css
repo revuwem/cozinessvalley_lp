@@ -2,6 +2,7 @@
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in HSLA */
+/*Common Document Stylesheets*/
 body {
   font-family: "Muller Narrow", sans-serif;
   font-size: 18px;
@@ -25,6 +26,15 @@ ul {
 .col-12 {
   flex: 0; }
 
+.list-item {
+  width: 100%; }
+
+@media (min-width: 720px) {
+  .list-item {
+    width: 50%; } }
+@media (min-width: 1200px) {
+  .list-item {
+    width: 40%; } }
 /*Stylesheets for sections*/
 section.container-fluid {
   padding: 3rem 0rem; }
@@ -58,15 +68,10 @@ section .row {
   background-color: #07080a;
   color: #eee; }
 
-.participants-list-item {
-  width: 50%; }
-  .participants-list-item h3 {
-    font-weight: bold;
-    text-transform: uppercase; }
+.participants-list-item h3 {
+  font-weight: bold;
+  text-transform: uppercase; }
 
-@media (max-width: 720px) {
-  .participants-list-item {
-    width: 100%; } }
 a.btn.brand-btn {
   margin: 0;
   border: 3px solid #07080a;
@@ -83,15 +88,6 @@ a.btn.brand-btn {
   padding: 1rem 3rem;
   margin-bottom: 0; }
 
-.prizes-list-item {
-  width: 100%; }
-
-@media (min-width: 720px) {
-  .prizes-list-item {
-    width: 40%; } }
-@media (min-width: 1200px) {
-  .prizes-list-item {
-    width: 30%; } }
 /*Prizes table styles*/
 td {
   max-width: 200px; }
