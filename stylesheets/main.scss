@@ -68,6 +68,10 @@ ul {
   padding: 0;
 }
 
+.col-12{
+    flex:0;
+}
+
 /*Stylesheets for sections*/
 section.container-fluid {
   padding: $base-section-padding;
@@ -90,7 +94,7 @@ section .row {
 }
 
 #situation-plan {
-  height: $base-section-height;
+  height: $base-section-height+50;
   background: url("../images/murmansk-situation-plan.png");
   background-size: contain;
   background-repeat: no-repeat;

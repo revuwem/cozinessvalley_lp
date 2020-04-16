@@ -22,6 +22,9 @@ ul {
   list-style: none;
   padding: 0; }
 
+.col-12 {
+  flex: 0; }
+
 /*Stylesheets for sections*/
 section.container-fluid {
   padding: 3rem 0rem; }
@@ -37,7 +40,7 @@ section .row {
   background: #8a9ba6 url("../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed; }
 
 #situation-plan {
-  height: 100vh;
+  height: 150vh;
   background: url("../images/murmansk-situation-plan.png");
   background-size: contain;
   background-repeat: no-repeat;
