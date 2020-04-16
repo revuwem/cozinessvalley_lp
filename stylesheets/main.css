@@ -14,7 +14,7 @@ ul {
 
 /*Stylesheets for sections*/
 section.container-fluid {
-  padding: 3rem 2rem; }
+  padding: 3rem 0rem; }
 
 section .row {
   margin: 0; }
@@ -30,5 +30,13 @@ section .row {
   background-repeat: no-repeat;
   background-position: right 50%;
   background-attachment: fixed; }
+
+#participants {
+  padding-top: 0; }
+  #participants h2 {
+    padding: 0.5rem 0;
+    border: 3px solid #14191F;
+    color: #14191F;
+    font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
