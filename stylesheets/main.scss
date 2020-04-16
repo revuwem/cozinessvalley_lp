@@ -1,0 +1,60 @@
+@charset 'utf-8';
+@import "http://fonts.fontstorage.com/import/mullernarrow.css";
+
+/* Color Theme Swatches in Hex */
+$coziness-valley-brand-colors-1-hex: #5F4373;
+$coziness-valley-brand-colors-2-hex: #394A59;
+$coziness-valley-brand-colors-3-hex: #8A9BA6;
+$coziness-valley-brand-colors-4-hex: #D5E7F2;
+$coziness-valley-brand-colors-5-hex: #A6483F;
+
+/* Color Theme Swatches in RGBA */
+$coziness-valley-brand-colors-1-rgba: rgba(95,67,115, 1);
+$coziness-valley-brand-colors-2-rgba: rgba(57,74,89, 1);
+$coziness-valley-brand-colors-3-rgba: rgba(138,155,166, 1);
+$coziness-valley-brand-colors-4-rgba: rgba(213,231,242, 1);
+$coziness-valley-brand-colors-5-rgba: rgba(166,72,63, 1);
+
+/* Color Theme Swatches in HSLA */
+$coziness-valley-brand-colors-1-hsla: hsla(275, 26, 35, 1);
+$coziness-valley-brand-colors-2-hsla: hsla(208, 21, 28, 1);
+$coziness-valley-brand-colors-3-hsla: hsla(203, 13, 59, 1);
+$coziness-valley-brand-colors-4-hsla: hsla(202, 52, 89, 1);
+$coziness-valley-brand-colors-5-hsla: hsla(5, 44, 44, 1);
+
+$base-font-family: 'Muller Narrow', sans-serif;
+$base-font-size: 18px;
+$base-section-height: 100vh; 
+$base-section-padding: 3rem 2rem; 
+
+body{
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+/*Stylesheets for sections*/
+section.container-fluid{
+    padding: $base-section-padding;
+}
+
+
+#valley-overview{
+    height: $base-section-height;
+    background: $coziness-valley-brand-colors-3-hex url('../images/coziness-valley-overview.jpeg') center/cover no-repeat fixed;    
+}
+
+#situation-plan{
+    height: $base-section-height;
+    background: url('../images/murmansk-situation-plan.png') right/contain no-repeat fixed;   
+}
+

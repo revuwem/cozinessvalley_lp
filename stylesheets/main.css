@@ -1,0 +1,27 @@
+@import "http://fonts.fontstorage.com/import/mullernarrow.css";
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+body {
+  font-family: "Muller Narrow", sans-serif;
+  font-size: 18px; }
+
+h2 {
+  text-transform: uppercase; }
+
+ul {
+  list-style: none; }
+
+/*Stylesheets for sections*/
+section.container-fluid {
+  padding: 3rem 2rem; }
+
+#valley-overview {
+  height: 100vh;
+  background: #8A9BA6 url("../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed; }
+
+#situation-plan {
+  height: 100vh;
+  background: url("../images/murmansk-situation-plan.png") right/contain no-repeat fixed; }
+
+/*# sourceMappingURL=main.css.map */
