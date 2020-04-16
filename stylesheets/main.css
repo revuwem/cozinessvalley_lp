@@ -4,13 +4,23 @@
 /* Color Theme Swatches in HSLA */
 body {
   font-family: "Muller Narrow", sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  color: #07080a; }
 
 h2 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0.5rem 0;
+  color: #07080a;
+  font-weight: bold; }
+
+h3 {
+  font-weight: bold;
   text-transform: uppercase; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
 
 /*Stylesheets for sections*/
 section.container-fluid {
@@ -19,9 +29,12 @@ section.container-fluid {
 section .row {
   margin: 0; }
 
+.brands img {
+  max-width: 100px; }
+
 #valley-overview {
   height: 100vh;
-  background: #8A9BA6 url("../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed; }
+  background: #8a9ba6 url("../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed; }
 
 #situation-plan {
   height: 100vh;
@@ -34,16 +47,12 @@ section .row {
 #participants {
   padding-top: 0; }
   #participants h2 {
-    margin: 0;
-    padding: 0.5rem 0;
-    color: #07080A;
-    font-weight: bold;
-    border: 3px solid #07080A; }
+    border: 3px solid #07080a; }
 
 .participants-list {
   padding: 1rem 3rem;
   margin-bottom: 0;
-  background-color: #07080A;
+  background-color: #07080a;
   color: #eee; }
 
 .participants-list-item {
@@ -57,14 +66,31 @@ section .row {
     width: 100%; } }
 a.btn.brand-btn {
   margin: 0;
-  border: 3px solid #07080A;
+  border: 3px solid #07080a;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   border-top: none;
-  color: #07080A;
+  color: #07080a;
   font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase; }
+
+.prizes-list {
+  padding: 1rem 3rem;
+  margin-bottom: 0; }
+
+.prizes-list-item {
+  width: 100%; }
+
+@media (min-width: 720px) {
+  .prizes-list-item {
+    width: 40%; } }
+@media (min-width: 1200px) {
+  .prizes-list-item {
+    width: 30%; } }
+/*Prizes table styles*/
+td {
+  max-width: 200px; }
 
 /*# sourceMappingURL=main.css.map */
