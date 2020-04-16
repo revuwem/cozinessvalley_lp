@@ -34,9 +34,19 @@ section .row {
 #participants {
   padding-top: 0; }
   #participants h2 {
+    margin: 0;
     padding: 0.5rem 0;
-    border: 3px solid #14191F;
-    color: #14191F;
+    border: 3px solid #07080A;
+    color: #07080A;
     font-weight: bold; }
+
+.participants-list {
+  padding: 1rem 3rem;
+  background-color: #07080A;
+  color: #eee; }
+
+.participants-list-item h3 {
+  font-weight: bold;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */

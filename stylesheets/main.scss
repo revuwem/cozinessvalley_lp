@@ -2,31 +2,33 @@
 @import "http://fonts.fontstorage.com/import/mullernarrow.css";
 
 /* Color Theme Swatches in Hex */
-$coziness-valley-brand-colors-1-hex: #14191F;
+$coziness-valley-brand-colors-1-hex: #07080A;
 $coziness-valley-brand-colors-2-hex: #394A59;
 $coziness-valley-brand-colors-3-hex: #8A9BA6;
 $coziness-valley-brand-colors-4-hex: #D5E7F2;
 $coziness-valley-brand-colors-5-hex: #A6483F;
 
 /* Color Theme Swatches in RGBA */
-$coziness-valley-brand-colors-1-rgba: rgba(20,25,31, 1);
+$coziness-valley-brand-colors-1-rgba: rgba(7,8,10, 1);
 $coziness-valley-brand-colors-2-rgba: rgba(57,74,89, 1);
 $coziness-valley-brand-colors-3-rgba: rgba(138,155,166, 1);
 $coziness-valley-brand-colors-4-rgba: rgba(213,231,242, 1);
 $coziness-valley-brand-colors-5-rgba: rgba(166,72,63, 1);
 
 /* Color Theme Swatches in HSLA */
-$coziness-valley-brand-colors-1-hsla: hsla(212, 21, 10, 1);
+$coziness-valley-brand-colors-1-hsla: hsla(219, 17, 3, 1);
 $coziness-valley-brand-colors-2-hsla: hsla(208, 21, 28, 1);
 $coziness-valley-brand-colors-3-hsla: hsla(203, 13, 59, 1);
 $coziness-valley-brand-colors-4-hsla: hsla(202, 52, 89, 1);
 $coziness-valley-brand-colors-5-hsla: hsla(5, 44, 44, 1);
-
 $base-font-family: 'Muller Narrow', sans-serif;
 $base-font-size: 18px;
-$base-brand-color: $coziness-valley-brand-colors-1-hex;
+
 $base-section-height: 100vh; 
 $base-section-padding: 3rem 0rem; 
+
+$base-brand-color: $coziness-valley-brand-colors-1-hex;
+$light-font-color: #eee;
 
 body{
     font-family: $base-font-family;
@@ -68,12 +70,25 @@ section .row{
 
 
 #participants{
-    padding-top: 0;
-    
+    padding-top: 0;    
     h2{
+        margin: 0;
         padding: 0.5rem 0;
         border: 3px solid $base-brand-color;
         color: $base-brand-color;
         font-weight: bold;
+    }
+}
+
+.participants-list{
+    padding: 1rem 3rem;
+    background-color: $base-brand-color;
+    color: $light-font-color;
+}
+
+.participants-list-item{
+    h3{
+        font-weight: bold;
+        text-transform: uppercase;
     }
 }
