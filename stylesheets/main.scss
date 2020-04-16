@@ -30,6 +30,17 @@ $base-section-padding: 3rem 0rem;
 $base-brand-color: $coziness-valley-brand-colors-1-hex;
 $light-font-color: #eee;
 
+
+@mixin border($width, $style, $color ) {
+    border: $width $style $color;
+}
+
+@mixin border-radius($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+}
+
 body{
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -73,22 +84,43 @@ section .row{
     padding-top: 0;    
     h2{
         margin: 0;
-        padding: 0.5rem 0;
-        border: 3px solid $base-brand-color;
+        padding: 0.5rem 0;       
         color: $base-brand-color;
         font-weight: bold;
+        @include border(3px, solid, $base-brand-color);
     }
 }
 
 .participants-list{
     padding: 1rem 3rem;
+    margin-bottom: 0;
     background-color: $base-brand-color;
-    color: $light-font-color;
+    color: $light-font-color;    
 }
 
 .participants-list-item{
+    width: 50%;
+
     h3{
         font-weight: bold;
         text-transform: uppercase;
     }
+}
+
+@media (max-width: 720px){
+    .participants-list-item{
+        width: 100%;    
+    
+    }
+}
+
+a.btn.brand-btn{
+    margin: 0;       
+    @include border(3px, solid, $base-brand-color);
+    @include border-radius(0);
+    border-top: none;
+    color: $base-brand-color;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }

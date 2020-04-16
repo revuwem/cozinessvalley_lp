@@ -36,16 +36,34 @@ section .row {
   #participants h2 {
     margin: 0;
     padding: 0.5rem 0;
-    border: 3px solid #07080A;
     color: #07080A;
-    font-weight: bold; }
+    font-weight: bold;
+    border: 3px solid #07080A; }
 
 .participants-list {
   padding: 1rem 3rem;
+  margin-bottom: 0;
   background-color: #07080A;
   color: #eee; }
 
-.participants-list-item h3 {
+.participants-list-item {
+  width: 50%; }
+  .participants-list-item h3 {
+    font-weight: bold;
+    text-transform: uppercase; }
+
+@media (max-width: 720px) {
+  .participants-list-item {
+    width: 100%; } }
+a.btn.brand-btn {
+  margin: 0;
+  border: 3px solid #07080A;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border-top: none;
+  color: #07080A;
+  font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase; }
 
