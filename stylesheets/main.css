@@ -1,6 +1,13 @@
 @import "http://fonts.fontstorage.com/import/mullernarrow.css";
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
 body {
   font-family: "Muller Narrow", sans-serif;
   font-size: 16px; }
+
+#valley-overview {
+  height: 100vh;
+  background: #8A9BA6 url("../images/coziness-valley-overview.jpeg") no-repeat fixed center; }
 
 /*# sourceMappingURL=main.css.map */
