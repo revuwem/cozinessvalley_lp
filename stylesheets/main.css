@@ -10,4 +10,8 @@ body {
   height: 100vh;
   background: #8A9BA6 url("../images/coziness-valley-overview.jpeg") no-repeat fixed center; }
 
+#situation-plan {
+  height: 100vh;
+  background: url("../images/murmansk-situation-plan.png") right/contain no-repeat fixed; }
+
 /*# sourceMappingURL=main.css.map */
