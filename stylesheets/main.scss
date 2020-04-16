@@ -1,0 +1,11 @@
+@charset 'utf-8';
+@import "http://fonts.fontstorage.com/import/mullernarrow.css";
+
+$base-font-family: 'Muller Narrow', sans-serif;
+$base-font-size: 16px;
+  
+
+body{
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+}
