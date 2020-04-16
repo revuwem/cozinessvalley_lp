@@ -47,6 +47,9 @@ section.container-fluid{
     padding: $base-section-padding;
 }
 
+section .row{
+    margin: 0;
+}
 
 #valley-overview{
     height: $base-section-height;

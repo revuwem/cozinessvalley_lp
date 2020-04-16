@@ -16,6 +16,9 @@ ul {
 section.container-fluid {
   padding: 3rem 2rem; }
 
+section .row {
+  margin: 0; }
+
 #valley-overview {
   height: 100vh;
   background: #8A9BA6 url("../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed; }
