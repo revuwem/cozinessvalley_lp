@@ -22,6 +22,10 @@ section.container-fluid {
 
 #situation-plan {
   height: 100vh;
-  background: url("../images/murmansk-situation-plan.png") right/contain no-repeat fixed; }
+  background: url("../images/murmansk-situation-plan.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-attachment: fixed; }
 
 /*# sourceMappingURL=main.css.map */

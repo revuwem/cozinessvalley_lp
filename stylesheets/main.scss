@@ -55,6 +55,10 @@ section.container-fluid{
 
 #situation-plan{
     height: $base-section-height;
-    background: url('../images/murmansk-situation-plan.png') right/contain no-repeat fixed;   
+    background: url('../images/murmansk-situation-plan.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 50%;  
+    background-attachment: fixed;
 }
 
