@@ -28,7 +28,7 @@ $base-font-size: 18px;
 $base-section-height: 100vh;
 $base-section-padding: 3rem 0rem;
 
-$base-list-padding: 1rem 3rem;
+$base-list-padding: 1rem;
 $base-list-margin-bottom: 0;
 
 $base-dark-color: $coziness-valley-brand-colors-1-hex;
@@ -50,6 +50,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   color: $base-dark-color;
+  position: relative;
 }
 
 h2 {
@@ -90,9 +91,40 @@ ul {
       }
     }
 
+/* Header Stylesheets */
+header{      
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%; 
+    min-height: 10vh; 
+    max-height: 100vh;
+    height: auto;   
+    
+    
+}
+
+.hero{
+    position: relative;
+    top:0;
+    left:0;
+    height: 100%;
+    z-index: -1;
+    video{ 
+        width: 100%;    
+        height: auto;    
+    }
+}
+
+h1,
+.nav-container{
+    position: relative;    
+    z-index:1;
+}
 
 
-/*Stylesheets for sections*/
+
+/*Main Stylesheets*/
 section.container-fluid {
   padding: $base-section-padding;
 }
@@ -143,8 +175,6 @@ section .row {
   }
 }
 
-
-
 a.btn.brand-btn {
   margin: 0;
   @include border(3px, solid, $base-dark-color);
@@ -165,4 +195,10 @@ a.btn.brand-btn {
 /*Prizes table styles*/
 td{
     max-width: 200px;
+}
+
+/*Juri section*/
+
+.juri-list{
+    max-width: 900px;
 }

@@ -20,45 +20,56 @@
     <title>Конкурс "Долина Уюта"</title>
   </head>
   <body>
-    <header>
-      <h1>Архитектурный конкурс "Долина Уюта"</h1>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!-- Toggler Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#main-navbar"
-          aria-controls="main-navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navbar links   -->
-        <ul
-          id="main-navbar"
-          class="collapse navbar-collapse navbar-nav d-lg-flex justify-content-lg-around"
-        >
-          <li class="nav-item"><a href="#" class="nav-link">О конкусе</a></li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Призовой фонд</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">Расписание</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Жюри</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Регистрация</a></li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Отправить проект</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="d-flex flex-column justify-content-end">      
+      <div class="hero">
+        <video preload="auto" autoplay="true" loop="true" muted="muted">
+          <source src="video/coziness-valley-overview.mp4" type="video/mp4"> 
+          <source src="video/coziness-valley-overview.webmhd.webm" type="video/webm">
+          <source src="video/coziness-valley-overview.oggtheora.ogv" type="video/ogg"> 
+          Your browser does not support the video tag. 
+        </video>
+    </div>
+      <h1 class="d-none">Архитектурный конкурс "Долина Уюта"</h1>      
+      <div class="nav-container d-none">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <!-- Toggler Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#main-navbar"
+            aria-controls="main-navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar links   -->
+          <ul
+            id="main-navbar"
+            class="collapse navbar-collapse navbar-nav d-lg-flex justify-content-lg-around"
+          >
+            <li class="nav-item"><a href="#" class="nav-link">О конкусе</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Призовой фонд</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Расписание</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Жюри</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Регистрация</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Отправить проект</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+     
     </header>
     <main>
       <section id="about" class="container-fluid">
         <h2 class="text-center">О конкурсе</h2>
-        <ul class="brands d-flex justify-content-center">
+        <ul class="brands my-5 d-flex justify-content-center">
           <li>
             <img
               src="images/murmansk-region-coat-of-arms.png"
@@ -256,25 +267,25 @@
       <section id="juri" class="container-fluid">
         <h2 class="text-center">Жюри</h2>
         <ul
-          class="juri-list list-unstyled d-flex flex-wrap justify-content-center mx-3"
+          class="juri-list list-unstyled d-flex flex-wrap justify-content-center mx-auto"
         >
-          <li class="w-25 m-3 p-2">
-            <img src="https://via.placeholder.com/150" alt="" class="mx-auto d-block" />
+          <li class="m-3 p-2">
+            <img src="https://via.placeholder.com/200" alt="" class="mx-auto d-block" />
           </li>
-          <li class="w-25 m-3 p-2">
-            <img src="https://via.placeholder.com/150" alt="" class="mx-auto d-block" />
+          <li class="m-3 p-2">
+            <img src="https://via.placeholder.com/200" alt="" class="mx-auto d-block" />
           </li>
-          <li class="w-25 m-3 p-2">
-            <img src="https://via.placeholder.com/150" alt="" class="mx-auto d-block" />
+          <li class="m-3 p-2">
+            <img src="https://via.placeholder.com/200" alt="" class="mx-auto d-block" />
           </li>
-          <li class="w-25 m-3 p-2">
-            <img src="https://via.placeholder.com/150" alt="" class="mx-auto d-block" />
+          <li class="m-3 p-2">
+            <img src="https://via.placeholder.com/200" alt="" class="mx-auto d-block" />
           </li>
-          <li class="w-25 m-3 p-2">
-            <img src="https://via.placeholder.com/150" alt="" class="mx-auto d-block" />
+          <li class="m-3 p-2">
+            <img src="https://via.placeholder.com/200" alt="" class="mx-auto d-block" />
           </li>
-          <li class="w-25 m-3 p-2">
-            <img src="https://via.placeholder.com/150" alt="" class="mx-auto d-block" />
+          <li class="m-3 p-2">
+            <img src="https://via.placeholder.com/200" alt="" class="mx-auto d-block" />
           </li>
         </ul>
       </section>
