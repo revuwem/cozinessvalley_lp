@@ -79,6 +79,15 @@ header {
     position: absolute;
     background: linear-gradient(0deg, #07080a 0%, rgba(7, 8, 10, 0) 100%); } }
 /*Main Stylesheets*/
+.pointer-up {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  border: 3px solid #a2473f;
+  border-radius: 5%;
+  color: #a2473f;
+  padding: 0 0.25rem; }
+
 section.container-fluid {
   padding: 3rem 0rem; }
 
