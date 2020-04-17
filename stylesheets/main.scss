@@ -45,6 +45,11 @@ $base-light-color: #eee;
 }
 
 /*Common Document Stylesheets*/
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
 
 body {
   font-family: $base-font-family;
@@ -101,33 +106,44 @@ header{
     min-height: 56px; //navbar height
     max-height: 100vh;
     overflow: hidden;
+    background: rgb(7,8,10);
 }
 
 .hero{
-    width: 100%;
+    width: 100%;     
     
-    video{
+    video{              
         width:100%;
     }
 }
 
 
 .navbar{      
-    position: absolute;     
+    position: relative;     
     bottom: 0;
     left: 0;
     width: 100%; 
+    background: rgb(7,8,10);  
+    padding-bottom: 1rem;   
+}
+
+#main-navbar a{
+    color: $base-light-color;        
+    font-size: 1.1em;   
+    font-weight: bold;     
+    text-transform: uppercase;
 }
 
 @media (max-width: 768px){
     .hero{
-        position: absolute;      
-        
-    }
+        display: none;  
+    }    
+}
 
-    .navbar{      
-        position: relative;     
-         
+@media (min-width: 992px){
+    .navbar{
+        position: absolute;
+        background: linear-gradient(0deg, rgba(7,8,10,1) 0%, rgba(7,8,10,0) 100%);
     }
 }
 
