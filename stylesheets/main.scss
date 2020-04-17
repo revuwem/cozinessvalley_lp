@@ -92,36 +92,44 @@ ul {
     }
 
 /* Header Stylesheets */
-header{      
+
+header{
     position: relative;
-    right: 0;
     top: 0;
-    width: 100%; 
-    min-height: 10vh; 
+    left: 0;
+    width: 100%;
+    min-height: 56px; //navbar height
     max-height: 100vh;
-    height: auto;   
-    
-    
+    overflow: hidden;
 }
 
 .hero{
-    position: relative;
-    top:0;
-    left:0;
-    height: 100%;
-    z-index: -1;
-    video{ 
-        width: 100%;    
-        height: auto;    
+    width: 100%;
+    
+    video{
+        width:100%;
     }
 }
 
-h1,
-.nav-container{
-    position: relative;    
-    z-index:1;
+
+.navbar{      
+    position: absolute;     
+    bottom: 0;
+    left: 0;
+    width: 100%; 
 }
 
+@media (max-width: 768px){
+    .hero{
+        position: absolute;      
+        
+    }
+
+    .navbar{      
+        position: relative;     
+         
+    }
+}
 
 
 /*Main Stylesheets*/

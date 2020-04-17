@@ -39,28 +39,30 @@ ul {
 /* Header Stylesheets */
 header {
   position: relative;
-  right: 0;
-  top: 0;
-  width: 100%;
-  min-height: 10vh;
-  max-height: 100vh;
-  height: auto; }
-
-.hero {
-  position: relative;
   top: 0;
   left: 0;
-  height: 100%;
-  z-index: -1; }
+  width: 100%;
+  min-height: 56px;
+  max-height: 100vh;
+  overflow: hidden; }
+
+.hero {
+  width: 100%; }
   .hero video {
-    width: 100%;
-    height: auto; }
+    width: 100%; }
 
-h1,
-.nav-container {
-  position: relative;
-  z-index: 1; }
+.navbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
 
+@media (max-width: 768px) {
+  .hero {
+    position: absolute; }
+
+  .navbar {
+    position: relative; } }
 /*Main Stylesheets*/
 section.container-fluid {
   padding: 3rem 0rem; }
