@@ -102,13 +102,17 @@ section .row {
   background: #8a9ba6 url("../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed; }
 
 #situation-plan {
-  height: 150vh;
+  height: 100vh;
   background: url("../images/murmansk-situation-plan.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 50%;
   background-attachment: fixed; }
 
+@media (max-width: 768px) {
+  #situation-plan {
+    min-height: 80rem;
+    /*min height for larger space between para's on the small screens*/ } }
 #participants {
   padding-top: 0; }
   #participants h2 {

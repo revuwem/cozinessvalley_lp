@@ -180,12 +180,18 @@ section .row {
 }
 
 #situation-plan {
-  height: $base-section-height+50;
+  height: $base-section-height;  
   background: url("../images/murmansk-situation-plan.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 50%;
   background-attachment: fixed;
+}
+
+@media (max-width: 768px){
+  #situation-plan{
+    min-height: 80rem; /*min height for larger space between para's on the small screens*/
+  }
 }
 
 #participants {
