@@ -103,7 +103,7 @@ section .row {
   background: url("../images/murmansk-situation-plan.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right 50%;
+  background-position: right 30%;
   background-attachment: fixed; }
 
 @media (max-width: 768px) {
