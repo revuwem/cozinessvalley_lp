@@ -48,10 +48,13 @@ header {
   left: 0;
   width: 100%;
   min-height: 56px;
-  max-height: 120vh;
+  max-height: 100vh;
   overflow: hidden;
   background: #07080a; }
 
+@media (max-width: 991px) {
+  header {
+    max-height: none; } }
 .hero {
   width: 100%; }
   .hero video {
