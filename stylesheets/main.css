@@ -2,6 +2,8 @@
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in HSLA */
+/*Body text style*/
+/*Headers style*/
 /*Common Document Stylesheets*/
 html {
   margin: 0;
@@ -9,20 +11,16 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  position: relative;
   font-family: "Lora", serif;
-  font-size: 18px;
-  color: #07080a;
-  position: relative; }
+  font-size: 16px;
+  line-height: 1.5;
+  color: #07080a; }
 
-h2 {
-  margin: 0;
-  padding: 0.5rem 0;
-  color: #07080a;
+h2, h3 {
+  color: #484c50;
   font-family: "Roboto", sans-serif;
-  text-transform: uppercase; }
-
-h3 {
-  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
   text-transform: uppercase; }
 
 ul {
@@ -76,15 +74,6 @@ header {
     position: absolute;
     background: linear-gradient(0deg, #07080a 0%, rgba(7, 8, 10, 0) 100%); } }
 /*Main Stylesheets*/
-.pointer-up {
-  position: fixed;
-  bottom: 20px;
-  right: 10px;
-  border: 3px solid #a2473f;
-  border-radius: 5%;
-  color: #a2473f;
-  padding: 0 0.25rem; }
-
 section.container-fluid {
   padding: 3rem 0rem; }
 
