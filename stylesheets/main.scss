@@ -60,16 +60,17 @@ body {
   position: relative;
 }
 
-h2 {
-  text-transform: uppercase;
+h2 {  
   margin: 0;
   padding: 0.5rem 0;
   color: $base-dark-color;
-  font-weight: bold;
+  font-family: $header-font-family;
+  text-transform: uppercase;
+  
 }
 
 h3 {
-    font-weight: bold;
+    font-family: $header-font-family;
     text-transform: uppercase;
   }
 
@@ -78,9 +79,6 @@ ul {
   padding: 0;
 }
 
-.col-12{
-    flex:0;
-}
 
 .list-item{
     width: 100%;

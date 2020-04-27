@@ -15,22 +15,19 @@ body {
   position: relative; }
 
 h2 {
-  text-transform: uppercase;
   margin: 0;
   padding: 0.5rem 0;
   color: #07080a;
-  font-weight: bold; }
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase; }
 
 h3 {
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase; }
 
 ul {
   list-style: none;
   padding: 0; }
-
-.col-12 {
-  flex: 0; }
 
 .list-item {
   width: 100%; }
