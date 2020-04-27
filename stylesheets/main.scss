@@ -24,7 +24,7 @@ $coziness-valley-brand-colors-5-hsla: hsla(5, 44, 44, 1);
 
 /*Body text style*/
 $base-font-family: "Lora", serif;
-$base-font-size: 16px;
+$base-font-size: 18px;
 
 /*Headers style*/
 $header-font-family: "Roboto", sans-serif;
@@ -49,6 +49,10 @@ $base-light-color: #eee;
   border-radius: $value;
 }
 
+// * {
+//   // border: 1px solid red;
+// }
+
 /*Common Document Stylesheets*/
 html {
   margin: 0;
@@ -57,22 +61,20 @@ html {
 }
 
 body {
-  position: relative;
+  color: $base-dark-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  line-height: 1.5;
-  color: $base-dark-color;
+  line-height: 27px; /*150% of font-size*/
 }
 
-h2 {
-}
-
-
-h2, h3{
+h2,
+h3 {
   color: $header-color;
   font-family: $header-font-family;
   font-size: 1.5rem;
   text-transform: uppercase;
+  line-height: 52px;
+  margin: 27px 0;
 }
 
 ul {
@@ -151,22 +153,43 @@ header {
 }
 
 /*Main Stylesheets*/
-.pointer-up {
-  position: fixed;
-  bottom: 20px;
-  right: 10px;
-  border: 3px solid hsla(5, 44, 44, 1);
-  border-radius: 5%;
-  color: hsla(5, 44, 44, 1);
-  padding: 0 0.25rem;
-}
+// .pointer-up {
+//   position: fixed;
+//   bottom: 20px;
+//   right: 10px;
+//   border: 3px solid hsla(5, 44, 44, 1);
+//   border-radius: 5%;
+//   color: hsla(5, 44, 44, 1);
+//   padding: 0 0.25rem;
+// }
 
-section.container-fluid {
-  padding: $base-section-padding;
+main .container-fluid {
+  padding: 0;
 }
 
 section .row {
   margin: 0;
+}
+
+#about {
+  margin: 3rem 0 5rem;
+  section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 5rem;
+    flex-direction: column;   
+    p{
+      max-width: 760px;
+    }    
+  }
+}
+
+@media (max-width: 600px) {
+  #about {
+    section {
+      padding: 2rem 3rem;
+    }
+  }
 }
 
 .brands {
@@ -204,8 +227,6 @@ section .row {
 }
 
 .participants-list {
-  padding: $base-list-padding;
-  margin-bottom: $base-list-margin-bottom;
   background-color: $base-dark-color;
   color: $base-light-color;
 }
@@ -228,11 +249,6 @@ a.btn.brand-btn {
   text-transform: uppercase;
 }
 
-.prizes-list {
-  padding: $base-list-padding;
-  margin-bottom: $base-list-margin-bottom;
-}
-
 /*Prizes table styles*/
 th {
   font-size: 1.75rem; /*Bootstrap's h3 font-size*/
@@ -245,7 +261,3 @@ td {
 }
 
 /*Juri section*/
-
-.juri-list {
-  max-width: 900px;
-}

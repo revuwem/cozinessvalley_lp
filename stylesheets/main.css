@@ -11,17 +11,20 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  position: relative;
+  color: #07080a;
   font-family: "Lora", serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #07080a; }
+  font-size: 18px;
+  line-height: 27px;
+  /*150% of font-size*/ }
 
-h2, h3 {
+h2,
+h3 {
   color: #484c50;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 52px;
+  margin: 27px 0; }
 
 ul {
   list-style: none;
@@ -74,12 +77,25 @@ header {
     position: absolute;
     background: linear-gradient(0deg, #07080a 0%, rgba(7, 8, 10, 0) 100%); } }
 /*Main Stylesheets*/
-section.container-fluid {
-  padding: 3rem 0rem; }
+main .container-fluid {
+  padding: 0; }
 
 section .row {
   margin: 0; }
 
+#about {
+  margin: 3rem 0 5rem; }
+  #about section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 5rem;
+    flex-direction: column; }
+    #about section p {
+      max-width: 760px; }
+
+@media (max-width: 600px) {
+  #about section {
+    padding: 2rem 3rem; } }
 .brands img {
   max-width: 100px; }
 
@@ -105,8 +121,6 @@ section .row {
     border: 3px solid #07080a; }
 
 .participants-list {
-  padding: 1rem;
-  margin-bottom: 0;
   background-color: #07080a;
   color: #eee; }
 
@@ -126,10 +140,6 @@ a.btn.brand-btn {
   font-weight: bold;
   text-transform: uppercase; }
 
-.prizes-list {
-  padding: 1rem;
-  margin-bottom: 0; }
-
 /*Prizes table styles*/
 th {
   font-size: 1.75rem;
@@ -141,7 +151,5 @@ td {
   max-width: 200px; }
 
 /*Juri section*/
-.juri-list {
-  max-width: 900px; }
 
 /*# sourceMappingURL=main.css.map */
