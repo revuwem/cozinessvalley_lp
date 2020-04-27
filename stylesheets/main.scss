@@ -1,5 +1,5 @@
 @charset 'utf-8';
-@import "http://fonts.fontstorage.com/import/mullernarrow.css";
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@700&display=swap');
 
 /* Color Theme Swatches in Hex */
 $coziness-valley-brand-colors-1-hex: #07080a;
@@ -22,7 +22,9 @@ $coziness-valley-brand-colors-3-hsla: hsla(203, 13, 59, 1);
 $coziness-valley-brand-colors-4-hsla: hsla(202, 52, 89, 1);
 $coziness-valley-brand-colors-5-hsla: hsla(5, 44, 44, 1);
 
-$base-font-family: "Muller Narrow", sans-serif;
+
+$base-font-family: 'Lora', serif;
+$header-font-family: 'Roboto', sans-serif;
 $base-font-size: 18px;
 
 $base-section-height: 100vh;
@@ -31,7 +33,7 @@ $base-section-padding: 3rem 0rem;
 $base-list-padding: 1rem;
 $base-list-margin-bottom: 0;
 
-$base-dark-color: $coziness-valley-brand-colors-1-hex;
+$base-dark-color: #07080a;
 $base-light-color: #eee;
 
 @mixin border($width, $style, $color) {
@@ -191,6 +193,7 @@ section .row {
   background-attachment: fixed;
 }
 
+
 @media (max-width: 768px){
   #situation-plan{
     min-height: 80rem; /*min height for larger space between para's on the small screens*/
@@ -236,9 +239,17 @@ a.btn.brand-btn {
 
 
 /*Prizes table styles*/
+th{
+  font-size: 1.75rem; /*Bootstrap's h3 font-size*/
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 td{
     max-width: 200px;
 }
+
+
 
 /*Juri section*/
 

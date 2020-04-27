@@ -1,4 +1,4 @@
-@import "http://fonts.fontstorage.com/import/mullernarrow.css";
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@700&display=swap");
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in HSLA */
@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Muller Narrow", sans-serif;
+  font-family: "Lora", serif;
   font-size: 18px;
   color: #07080a;
   position: relative; }
@@ -145,6 +145,12 @@ a.btn.brand-btn {
   margin-bottom: 0; }
 
 /*Prizes table styles*/
+th {
+  font-size: 1.75rem;
+  /*Bootstrap's h3 font-size*/
+  font-weight: bold;
+  text-transform: uppercase; }
+
 td {
   max-width: 200px; }
 
