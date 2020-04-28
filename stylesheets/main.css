@@ -178,15 +178,31 @@ a.btn.brand-btn {
   font-family: "Roboto", sans-serif; }
 
 /*Prizes table styles*/
-th {
-  font-size: 1.75rem;
-  /*Bootstrap's h3 font-size*/
-  font-weight: bold;
-  text-transform: uppercase; }
+.prizes-list {
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem 2rem; }
+  .prizes-list .prizes-list-item {
+    max-width: 340px;
+    margin: 1rem 0; }
+    .prizes-list .prizes-list-item table {
+      font-size: 1.3rem;
+      border-spacing: 0 9px;
+      border-collapse: separate; }
+      .prizes-list .prizes-list-item table th {
+        color: #484c50;
+        font-size: 1.5rem;
+        /*Bootstrap's h3 font-size*/
+        font-family: "Roboto", sans-serif;
+        line-height: 52px;
+        margin: 27px 0; }
+      .prizes-list .prizes-list-item table td {
+        min-width: 130px; }
 
-td {
-  max-width: 200px; }
-
+@media only screen and (min-width: 720px) {
+  .prizes-list {
+    padding: 1rem 1rem 2rem 2rem; }
+    .prizes-list .prizes-list-item {
+      margin: 1rem 3rem; } }
 /*Juri section*/
 
 /*# sourceMappingURL=main.css.map */
