@@ -88,7 +88,7 @@ section .row {
   #about section {
     max-width: 1000px;
     margin: 2rem auto;
-    padding: 0 5rem;
+    padding: 0 5rem 0 7rem;
     flex-direction: column; }
     #about section p {
       max-width: 760px; }
