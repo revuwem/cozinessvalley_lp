@@ -11,7 +11,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  color: #07080a;
+  color: #1d1f21;
   font-family: "Lora", serif;
   font-size: 18px;
   line-height: 27px;
@@ -144,27 +144,36 @@ section .row {
     padding: 2rem 2rem 2rem 7rem; }
     #situation-plan .row .block p {
       width: 650px; } }
+/*Participants section*/
 #participants {
   padding-top: 0; }
   #participants h2 {
-    border: 3px solid #07080a; }
+    margin: 0;
+    border-top: 3px solid #1d1f21; }
+  #participants .participants-list {
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 2rem;
+    background-color: #1d1f21;
+    color: #eee; }
+    #participants .participants-list .participants-list-item {
+      max-width: 340px;
+      margin: 1rem 0; }
+      #participants .participants-list .participants-list-item h3 {
+        color: #eee; }
 
-.participants-list {
-  background-color: #07080a;
-  color: #eee; }
-
-.participants-list-item h3 {
-  font-weight: bold;
-  text-transform: uppercase; }
-
+@media only screen and (min-width: 720px) {
+  #participants .participants-list {
+    padding: 1rem 1rem 2rem 2rem; }
+    #participants .participants-list .participants-list-item {
+      margin: 1rem 3rem; } }
 a.btn.brand-btn {
   margin: 0;
-  border: 3px solid #07080a;
+  border: 3px solid #1d1f21;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   border-top: none;
-  color: #07080a;
+  color: #1d1f21;
   font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase; }

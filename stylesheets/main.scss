@@ -36,7 +36,7 @@ $base-section-padding: 3rem 0rem;
 $base-list-padding: 1rem;
 $base-list-margin-bottom: 0;
 
-$base-dark-color: #07080a;
+$base-dark-color: #1d1f21;
 $base-light-color: #eee;
 
 @mixin border($width, $style, $color) {
@@ -276,24 +276,46 @@ section .row {
 }
 
 
+/*Participants section*/
 #participants {
   padding-top: 0;
+
   h2 {
-    @include border(3px, solid, $base-dark-color);
+    margin: 0;
+    border-top: 3px solid $base-dark-color;
+  }
+
+  .participants-list {      
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 2rem;
+    background-color: $base-dark-color;
+    color: $base-light-color;
+
+    .participants-list-item {   
+      max-width: 340px;   
+      margin: 1rem 0;
+
+      h3 {
+        color: $base-light-color;
+      }
+    }
   }
 }
 
-.participants-list {
-  background-color: $base-dark-color;
-  color: $base-light-color;
-}
-
-.participants-list-item {
-  h3 {
-    font-weight: bold;
-    text-transform: uppercase;
+@media only screen and (min-width: 720px){
+  #participants {  
+  
+    .participants-list {   
+      padding: 1rem 1rem 2rem 2rem;
+        
+      .participants-list-item {  
+        margin: 1rem 3rem;
+      }
+    }
   }
 }
+
+
 
 a.btn.brand-btn {
   margin: 0;
