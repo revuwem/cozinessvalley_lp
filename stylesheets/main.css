@@ -174,9 +174,8 @@ a.btn.brand-btn {
   border-radius: 0;
   border-top: none;
   color: #1d1f21;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-transform: uppercase; }
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif; }
 
 /*Prizes table styles*/
 th {
