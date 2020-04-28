@@ -85,6 +85,7 @@ section .row {
 
 /*About section*/
 #about {
+  position: relative;
   margin: 3rem 0 5rem; }
   #about section {
     max-width: 1000px;
@@ -93,6 +94,16 @@ section .row {
     flex-direction: column; }
     #about section p {
       max-width: 760px; }
+
+#about::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 10px;
+  background-color: #ff8806; }
 
 @media (max-width: 767px) {
   #about section {
@@ -179,6 +190,7 @@ a.btn.brand-btn {
 
 /*Prizes table styles*/
 .prizes-list {
+  position: relative;
   margin: 0 auto;
   padding: 1rem 1rem 2rem 2rem; }
   .prizes-list .prizes-list-item {
@@ -198,11 +210,68 @@ a.btn.brand-btn {
       .prizes-list .prizes-list-item table td {
         min-width: 130px; }
 
+.prizes-list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 60px;
+  height: 10px;
+  background-color: #ff8806; }
+
+.prizes-list::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 10px;
+  background-color: #ff8806; }
+
 @media only screen and (min-width: 720px) {
   .prizes-list {
     padding: 1rem 1rem 2rem 2rem; }
     .prizes-list .prizes-list-item {
       margin: 1rem 3rem; } }
-/*Juri section*/
+/*Schedule section*/
+.timelines {
+  max-width: 1000px;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column; }
+  .timelines .timeline {
+    width: 60%;
+    min-height: 130px;
+    display: flex;
+    justify-content: flex-end; }
+    .timelines .timeline p {
+      margin: 0;
+      padding: 1rem;
+      flex: 2 1 60%;
+      text-align: right; }
+    .timelines .timeline time {
+      flex: 1 2 30%;
+      font-size: 3rem;
+      color: #eee;
+      line-height: 41px;
+      /*150% of base line-height*/
+      background-color: #ff8806;
+      padding: 1rem 0.5rem; }
+  .timelines .timeline:nth-child(even) {
+    flex-direction: row-reverse;
+    align-self: flex-end; }
+    .timelines .timeline:nth-child(even) p {
+      text-align: left; }
+    .timelines .timeline:nth-child(even) time {
+      display: flex;
+      justify-content: flex-end; }
+
+@media only screen and (max-width: 719px) {
+  .timelines {
+    padding: 1rem; }
+    .timelines .timeline {
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

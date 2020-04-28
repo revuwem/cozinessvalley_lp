@@ -173,6 +173,7 @@ section .row {
 
 /*About section*/
 #about {
+  position: relative;
   margin: 3rem 0 5rem;
   section {
     max-width: 1000px;
@@ -183,6 +184,17 @@ section .row {
       max-width: 760px;
     }
   }
+}
+
+#about::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 10px;
+  background-color: #ff8806;
 }
 
 @media (max-width: 767px) {
@@ -231,29 +243,27 @@ section .row {
   }
 }
 
-@media only screen and (min-width: 720px){
+@media only screen and (min-width: 720px) {
   #situation-plan {
-   
     .row {
-      
       .block {
-        padding: 2rem 2rem 2rem 7rem;        
+        padding: 2rem 2rem 2rem 7rem;
       }
     }
   }
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
   #situation-plan {
     height: 60rem;
     background-size: contain;
     background-position: right;
-    .row {      
+    .row {
       max-width: 60%;
-      .block{
+      .block {
         margin: 0 auto;
         padding: 2rem;
-        p{
+        p {
           width: 470px;
         }
       }
@@ -261,20 +271,19 @@ section .row {
   }
 }
 
-@media only screen and (min-width: 1280px){
-  #situation-plan {    
-    .row {           
-      .block{
+@media only screen and (min-width: 1280px) {
+  #situation-plan {
+    .row {
+      .block {
         margin: 0 auto;
-        padding: 2rem 2rem 2rem 7rem; 
-        p{
+        padding: 2rem 2rem 2rem 7rem;
+        p {
           width: 650px;
         }
       }
     }
   }
 }
-
 
 /*Participants section*/
 #participants {
@@ -285,14 +294,14 @@ section .row {
     border-top: 3px solid $base-dark-color;
   }
 
-  .participants-list {      
+  .participants-list {
     margin: 0 auto;
     padding: 1rem 1rem 2rem 2rem;
     background-color: $base-dark-color;
     color: $base-light-color;
 
-    .participants-list-item {   
-      max-width: 340px;   
+    .participants-list-item {
+      max-width: 340px;
       margin: 1rem 0;
 
       h3 {
@@ -302,13 +311,12 @@ section .row {
   }
 }
 
-@media only screen and (min-width: 720px){
-  #participants {  
-  
-    .participants-list {   
+@media only screen and (min-width: 720px) {
+  #participants {
+    .participants-list {
       padding: 1rem 1rem 2rem 2rem;
-        
-      .participants-list-item {  
+
+      .participants-list-item {
         margin: 1rem 3rem;
       }
     }
@@ -322,52 +330,124 @@ a.btn.brand-btn {
   border-top: none;
   color: $base-dark-color;
   font-size: 1.5rem;
-  font-family: $header-font-family;  
+  font-family: $header-font-family;
 }
 
 /*Prizes table styles*/
 
-.prizes-list{
-    margin: 0 auto;
+.prizes-list {
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem 2rem;
+  .prizes-list-item {
+    max-width: 340px;
+    margin: 1rem 0;
+
+    table {
+      font-size: 1.3rem;
+      border-spacing: 0 9px;
+      border-collapse: separate;
+
+      th {
+        color: $header-color;
+        font-size: 1.5rem; /*Bootstrap's h3 font-size*/
+        font-family: $header-font-family;
+        line-height: 52px;
+        margin: 27px 0;
+      }
+
+      td {
+        min-width: 130px;
+      }
+    }
+  }
+}
+
+.prizes-list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 60px;
+  height: 10px;
+  background-color: #ff8806;
+}
+
+.prizes-list::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 10px;
+  background-color: #ff8806;
+}
+
+@media only screen and (min-width: 720px) {
+  .prizes-list {
     padding: 1rem 1rem 2rem 2rem;
-    .prizes-list-item{
-      max-width: 340px;   
-      margin: 1rem 0;
 
-      table{
-        font-size: 1.3rem;
-        border-spacing: 0 9px;
-        border-collapse: separate;
-        
-        th {
-          color: $header-color;
-          font-size: 1.5rem; /*Bootstrap's h3 font-size*/
-          font-family: $header-font-family;
-          line-height: 52px;
-          margin: 27px 0;
-        }
-
-        td{
-          min-width: 130px;
-        }
-      }
-      
+    .prizes-list-item {
+      margin: 1rem 3rem;
     }
+  }
 }
 
-@media only screen and (min-width: 720px){
-  
-  
-    .prizes-list {   
-      padding: 1rem 1rem 2rem 2rem;
-        
-      .prizes-list-item {  
-        margin: 1rem 3rem;
-      }
+/*Schedule section*/
+.timelines {
+  max-width: 1000px;
+  padding: 2rem 5rem;  
+  display: flex;
+  flex-direction: column;
+
+  .timeline {
+    width: 60%;
+    min-height: 130px;    
+    display: flex;
+    justify-content: flex-end;
+
+    p {      
+      margin: 0;
+      padding: 1rem;
+      flex: 2 1 60%;
+      text-align: right;     
     }
-  
+
+    time {
+      flex: 1 2 30%;
+      font-size: 3rem;
+      color: $base-light-color;
+      line-height: 41px; /*150% of base line-height*/
+      background-color: #ff8806;
+      padding: 1rem 0.5rem;
+    }
+  }
+
+  .timeline:nth-child(even) {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+
+    p{
+      text-align: left;
+    }
+
+    time {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media only screen and (max-width: 719px){
+  .timelines{
+    padding: 1rem;
+    .timeline{
+      width: 100%;
+    }
+  }
 }
 
 
 
-/*Juri section*/
