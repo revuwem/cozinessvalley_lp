@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/css/main.css" type="text/css" />
     <title>Конкурс "Долина Уюта"</title>
   </head>
 
@@ -410,18 +410,19 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      window.onscroll = function(){myFunction()};
+      window.onscroll = function(){fixNavbar()};
 
       var header = document.getElementById('header');
-      var sticky = header.offsetTop;
+      var headerOffsetTop = header.offsetTop;
 
-      function myFunction(){
-        if(window.pageYOffset>=sticky){
+      function fixNavbar(){
+        if(window.pageYOffset>=headerOffsetTop){
           header.classList.add("fixed-top");
         }else{
           header.classList.remove("fixed-top");
         }
       }
+
     </script>
   </body>
 </html>
