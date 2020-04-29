@@ -71,8 +71,7 @@ h2,
 h3 {
   color: $header-color;
   font-family: $header-font-family;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-size: 1.5rem;  
   line-height: 52px;
   margin: 27px 0;
 }
@@ -473,5 +472,8 @@ a.btn.brand-btn {
   }
 }
 
-
+/*Juri list*/
+.juri-list{
+  max-width: 800px;
+}
 
