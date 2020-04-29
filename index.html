@@ -26,24 +26,23 @@
   </head>
 
   <body>
-    <header>
-      <div id="preview" class="hero">
-        <video preload="auto" autoplay loop muted="muted">
-          <source src="video/coziness-valley-overview.mp4" type="video/mp4" />
-          <source
-            src="video/coziness-valley-overview.webmhd.webm"
-            type="video/webm"
-          />
-          <source
-            src="video/coziness-valley-overview.oggtheora.ogv"
-            type="video/ogg"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+    <div id="preview" class="hero">
+      <video preload="auto" autoplay loop muted="muted">
+        <source src="video/coziness-valley-overview.mp4" type="video/mp4" />
+        <source
+          src="video/coziness-valley-overview.webmhd.webm"
+          type="video/webm"
+        />
+        <source
+          src="video/coziness-valley-overview.oggtheora.ogv"
+          type="video/ogg"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <header id="header">      
       <h1 class="d-none">Архитектурный конкурс "Долина Уюта"</h1>
-
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark">
         <!-- Toggler Button -->
         <button
           class="navbar-toggler"
@@ -57,8 +56,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navbar links   -->
-        <ul
-          id="main-navbar"
+        <ul          
           class="collapse navbar-collapse navbar-nav d-lg-flex justify-content-lg-around"
         >
           <!-- <li class="nav-item"><a href="#about" class="nav-link">О конкусе</a></li> -->
@@ -91,8 +89,7 @@
           </h2>
           <p>
             Конкурс проводится Правительством Мурманской области совместно с АНО&nbsp;"Центр&nbsp;городского развития Мурманской области" и является одним из&nbsp;самых&nbsp;
-            масштабных&nbsp;конкурсных&nbsp;проектов в комплексной работе по
-            благоустройству региона.
+            масштабных&nbsp;конкурсных&nbsp;проектов в комплексной работе по&nbsp;благоустройству&nbsp;региона.
           </p>
         </section>
         <section class="row">
@@ -412,5 +409,19 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.onscroll = function(){myFunction()};
+
+      var header = document.getElementById('header');
+      var sticky = header.offsetTop;
+
+      function myFunction(){
+        if(window.pageYOffset>=sticky){
+          header.classList.add("sticky");
+        }else{
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>

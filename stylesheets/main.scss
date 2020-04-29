@@ -129,8 +129,8 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgb(7, 8, 10);
-  padding-bottom: 1rem;
+  background: #262e37;
+  margin-bottom: 0.5rem;
 }
 
 #main-navbar a {
@@ -143,12 +143,14 @@ header {
 @media (min-width: 992px) {
   .navbar {
     position: absolute;
-    background: linear-gradient(
-      0deg,
-      rgba(7, 8, 10, 1) 0%,
-      rgba(7, 8, 10, 0) 100%
-    );
+    background: rgba(37, 45, 53, 0.7);
   }
+}
+
+.sticky{
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 /*Main Stylesheets*/
@@ -161,6 +163,10 @@ header {
 //   color: hsla(5, 44, 44, 1);
 //   padding: 0 0.25rem;
 // }
+
+main{
+  position: relative;
+}
 
 main .container-fluid {
   padding: 0;
@@ -180,7 +186,7 @@ section .row {
     padding: 2rem 5rem 0 7rem;
     flex-direction: column;
     p {
-      max-width: 760px;
+      max-width: 730px;
     }
   }
 }
