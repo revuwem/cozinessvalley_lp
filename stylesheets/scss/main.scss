@@ -1,0 +1,471 @@
+@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@700&display=swap");
+
+/* Color Theme Swatches in Hex */
+$coziness-valley-brand-colors-1-hex: #07080a;
+$coziness-valley-brand-colors-2-hex: #394a59;
+$coziness-valley-brand-colors-3-hex: #8a9ba6;
+$coziness-valley-brand-colors-4-hex: #d5e7f2;
+$coziness-valley-brand-colors-5-hex: #a6483f;
+
+/* Color Theme Swatches in RGBA */
+$coziness-valley-brand-colors-1-rgba: rgba(7, 8, 10, 1);
+$coziness-valley-brand-colors-2-rgba: rgba(57, 74, 89, 1);
+$coziness-valley-brand-colors-3-rgba: rgba(138, 155, 166, 1);
+$coziness-valley-brand-colors-4-rgba: rgba(213, 231, 242, 1);
+$coziness-valley-brand-colors-5-rgba: rgba(166, 72, 63, 1);
+
+/* Color Theme Swatches in HSLA */
+$coziness-valley-brand-colors-1-hsla: hsla(219, 17, 3, 1);
+$coziness-valley-brand-colors-2-hsla: hsla(208, 21, 28, 1);
+$coziness-valley-brand-colors-3-hsla: hsla(203, 13, 59, 1);
+$coziness-valley-brand-colors-4-hsla: hsla(202, 52, 89, 1);
+$coziness-valley-brand-colors-5-hsla: hsla(5, 44, 44, 1);
+
+/*Body text style*/
+$base-font-family: "Lora", serif;
+$base-font-size: 18px;
+
+/*Headers style*/
+$header-font-family: "Roboto", sans-serif;
+$header-color: #484c50;
+
+$base-section-height: 100vh;
+$base-section-padding: 3rem 0rem;
+
+$base-list-padding: 1rem;
+$base-list-margin-bottom: 0;
+
+$base-dark-color: #1d1f21;
+$base-light-color: #eee;
+
+@mixin border($width, $style, $color) {
+  border: $width $style $color;
+}
+
+@mixin border-radius($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
+
+// * {
+//   // border: 1px solid red;
+// }
+
+/*Common Document Stylesheets*/
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $base-dark-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: 27px; /*150% of font-size*/
+}
+
+h2,
+h3 {
+  color: $header-color;
+  font-family: $header-font-family;
+  font-size: 1.5rem;  
+  line-height: 52px;
+  margin: 27px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .list-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-item {
+    width: 40%;
+  }
+}
+
+/* Header Stylesheets */
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 56px; //navbar height
+  max-height: 100vh;
+  overflow: hidden;
+  background: rgb(7, 8, 10);
+}
+
+@media (max-width: 991px) {
+  header {
+    max-height: none;
+  }
+}
+
+.hero {
+  width: 100%;
+
+  video {
+    width: 100%;
+  }
+}
+
+.navbar {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #262e37;
+  margin-bottom: 0.5rem;
+}
+
+#main-navbar a {
+  color: $base-light-color;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    position: absolute;
+    background: rgba(37, 45, 53, 0.7);
+  }
+}
+
+
+/*Main Stylesheets*/
+main{
+  position: relative;
+}
+
+main .container-fluid {
+  padding: 0;
+}
+
+section .row {
+  margin: 0;
+}
+
+/*About section*/
+#about {
+  position: relative;
+  margin: 3rem 0 5rem;
+  section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 5rem 0 7rem;
+    flex-direction: column;
+    p {
+      max-width: 730px;
+    }
+  }
+}
+
+#about::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 10px;
+  background-color: #ff8806;
+}
+
+@media (max-width: 767px) {
+  #about {
+    section {
+      padding: 2rem 2rem 0 4rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #about {
+    section {
+      padding: 1rem 1rem 0 2rem;
+    }
+  }
+}
+
+.brands {
+  img {
+    max-width: 100px;
+  }
+}
+
+/*Valley overview section*/
+#valley-overview {
+  height: $base-section-height;
+  background: $coziness-valley-brand-colors-3-hex
+    url("../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed;
+}
+
+/*Situation plan section*/
+#situation-plan {
+  height: 100rem; /*min height for larger space on the small screens between section's blocks*/
+  background: url("../images/murmansk-situation-plan.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  .row {
+    width: 100%;
+    height: 100%;
+    .block {
+      padding: 2rem 1rem 2rem 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  #situation-plan {
+    .row {
+      .block {
+        padding: 2rem 2rem 2rem 7rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #situation-plan {
+    height: 60rem;
+    background-size: contain;
+    background-position: right;
+    .row {
+      max-width: 60%;
+      .block {
+        margin: 0 auto;
+        padding: 2rem;
+        p {
+          width: 470px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #situation-plan {
+    .row {
+      .block {
+        margin: 0 auto;
+        padding: 2rem 2rem 2rem 7rem;
+        p {
+          width: 650px;
+        }
+      }
+    }
+  }
+}
+
+/*Participants section*/
+#participants {
+  padding-top: 0;
+
+  h2 {
+    margin: 0;
+    border-top: 3px solid $base-dark-color;
+  }
+
+  .participants-list {
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 2rem;
+    background-color: $base-dark-color;
+    color: $base-light-color;
+
+    .participants-list-item {
+      max-width: 340px;
+      margin: 1rem 0;
+
+      h3 {
+        color: $base-light-color;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  #participants {
+    .participants-list {
+      padding: 1rem 1rem 2rem 2rem;
+
+      .participants-list-item {
+        margin: 1rem 3rem;
+      }
+    }
+  }
+}
+
+a.btn.brand-btn {
+  margin: 0;
+  @include border(3px, solid, $base-dark-color);
+  @include border-radius(0);
+  border-top: none;
+  color: $base-dark-color;
+  font-size: 1.5rem;
+  font-family: $header-font-family;
+}
+
+
+/*Prizes table styles*/
+
+.prizes-list {
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem 2rem;
+  .prizes-list-item {
+    max-width: 340px;
+    margin: 1rem 0;
+
+    table {
+      font-size: 1.3rem;
+      border-spacing: 0 9px;
+      border-collapse: separate;
+
+      th {
+        color: $header-color;
+        font-size: 1.5rem; /*Bootstrap's h3 font-size*/
+        font-family: $header-font-family;
+        line-height: 52px;
+        margin: 27px 0;
+      }
+
+      td {
+        min-width: 130px;
+      }
+    }
+  }
+}
+
+.prizes-list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 60px;
+  height: 10px;
+  background-color: #ff8806;
+}
+
+.prizes-list::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 10px;
+  background-color: #ff8806;
+}
+
+@media only screen and (min-width: 720px) {
+  .prizes-list {
+    padding: 1rem 1rem 2rem 2rem;
+
+    .prizes-list-item {
+      margin: 1rem 3rem;
+    }
+  }
+}
+
+/*Schedule section*/
+#schedule{
+  .row{
+    background: url("../images/transparent-situation-plan.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  }
+}
+
+.timelines {
+  min-width: 600px;
+  max-width: 800px;
+  padding: 0 2rem;  
+  display: flex;
+  flex-direction: column;
+
+  .timeline {
+    width: 60%;
+    min-height: 130px;    
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    p {      
+      margin: 0;
+      padding: 1rem;
+      flex: 2 1 60%;
+      text-align: right;  
+      
+      strong{
+        color: $header-color;  
+      font-family: $header-font-family; 
+      }
+    }
+
+    time {
+      flex: 1 2 30%;
+      font-size: 3rem;
+      color: $base-light-color;
+      line-height: 41px; /*150% of base line-height*/
+      background-color: #ff8806;
+      padding: 1rem 0.5rem;
+    }
+  }
+
+  .timeline:nth-child(even) {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+
+    p{
+      text-align: left;
+    }
+
+    time {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .timeline:nth-child(1)::before{
+    content: '';
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 719px){
+  .timelines{
+    padding: 1rem;
+    min-width: auto;
+    .timeline{
+      width: 100%;
+    }
+  }
+}
+
+/*Juri list*/
+.juri-list{
+  max-width: 800px;
+}
+
