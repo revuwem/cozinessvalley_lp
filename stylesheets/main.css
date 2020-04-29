@@ -236,9 +236,15 @@ a.btn.brand-btn {
     .prizes-list .prizes-list-item {
       margin: 1rem 3rem; } }
 /*Schedule section*/
+#schedule .row {
+  background: url("../images/transparent-situation-plan.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right; }
+
 .timelines {
-  max-width: 1000px;
-  padding: 2rem 5rem;
+  max-width: 800px;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column; }
   .timelines .timeline {
@@ -251,6 +257,9 @@ a.btn.brand-btn {
       padding: 1rem;
       flex: 2 1 60%;
       text-align: right; }
+      .timelines .timeline p strong {
+        color: #484c50;
+        font-family: "Roboto", sans-serif; }
     .timelines .timeline time {
       flex: 1 2 30%;
       font-size: 3rem;
@@ -267,6 +276,11 @@ a.btn.brand-btn {
     .timelines .timeline:nth-child(even) time {
       display: flex;
       justify-content: flex-end; }
+  .timelines .timeline:nth-child(1)::before {
+    content: '';
+    position: relative;
+    top: 0;
+    right: 0; }
 
 @media only screen and (max-width: 719px) {
   .timelines {
