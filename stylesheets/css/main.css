@@ -40,14 +40,11 @@ ul {
     width: 40%; } }
 /* Header Stylesheets */
 header {
-  position: absolute;
-  top: 0;
+  position: relative;
+  bottom: 65px;
   left: 0;
   width: 100%;
-  min-height: 56px;
-  max-height: 100vh;
-  overflow: hidden;
-  background: #07080a; }
+  height: 56px; }
 
 @media (max-width: 991px) {
   header {
@@ -58,6 +55,7 @@ header {
     width: 100%; }
 
 .navbar {
+  position: relative;
   width: 100%;
   background: #262e37;
   margin-bottom: 0.5rem; }
