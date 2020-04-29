@@ -243,6 +243,7 @@ a.btn.brand-btn {
   background-position: right; }
 
 .timelines {
+  min-width: 600px;
   max-width: 800px;
   padding: 0 2rem;
   display: flex;
@@ -251,7 +252,8 @@ a.btn.brand-btn {
     width: 60%;
     min-height: 130px;
     display: flex;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.7); }
     .timelines .timeline p {
       margin: 0;
       padding: 1rem;
@@ -284,7 +286,8 @@ a.btn.brand-btn {
 
 @media only screen and (max-width: 719px) {
   .timelines {
-    padding: 1rem; }
+    padding: 1rem;
+    min-width: auto; }
     .timelines .timeline {
       width: 100%; } }
 
