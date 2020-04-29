@@ -100,7 +100,7 @@ ul {
 /* Header Stylesheets */
 
 header {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -124,10 +124,7 @@ header {
   }
 }
 
-.navbar {
-  position: relative;
-  bottom: 0;
-  left: 0;
+.navbar {  
   width: 100%;
   background: #262e37;
   margin-bottom: 0.5rem;
@@ -149,10 +146,6 @@ header {
 
 
 /*Main Stylesheets*/
-main{
-  position: relative;
-}
-
 main .container-fluid {
   padding: 0;
 }
