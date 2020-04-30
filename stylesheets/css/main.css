@@ -88,7 +88,7 @@ ul {
       border-radius: 3px;
       visibility: hidden;
       transform: scaleX(0);
-      transition: 0.25s ease-in; }
+      transition: 0.15s ease-in; }
     .navbar .nav-items .nav-link:hover:after,
     .navbar .nav-items .nav-link:focus:after,
     .navbar .nav-items .nav-link.active:after {
