@@ -168,18 +168,20 @@ section .row {
       max-width: 730px;
     }
   }
+
+  section:nth-child(1)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 60px;
+    height: 10px;
+    background-color: #ff8806;
+  }
 }
 
-#about::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 10px;
-  background-color: #ff8806;
-}
+
 
 @media (max-width: 767px) {
   #about {

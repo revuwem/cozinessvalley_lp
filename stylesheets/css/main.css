@@ -90,16 +90,15 @@ section .row {
     flex-direction: column; }
     #about section p {
       max-width: 730px; }
-
-#about::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 10px;
-  background-color: #ff8806; }
+  #about section:nth-child(1)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 60px;
+    height: 10px;
+    background-color: #ff8806; }
 
 @media (max-width: 767px) {
   #about section {
