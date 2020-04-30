@@ -169,7 +169,8 @@ ul {
     }
     
     .nav-link:hover:after,
-    .nav-link:focus:after {
+    .nav-link:focus:after,
+    .nav-link.active:after {
       visibility: visible;
       transform: scaleX(1);
     }

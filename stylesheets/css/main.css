@@ -90,7 +90,8 @@ ul {
       transform: scaleX(0);
       transition: 0.25s ease-in; }
     .navbar .nav-items .nav-link:hover:after,
-    .navbar .nav-items .nav-link:focus:after {
+    .navbar .nav-items .nav-link:focus:after,
+    .navbar .nav-items .nav-link.active:after {
       visibility: visible;
       transform: scaleX(1); }
 
