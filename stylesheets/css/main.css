@@ -47,7 +47,7 @@ ul {
     width: 15%;
     margin: 0;
     display: flex;
-    justify-content: center; }
+    justify-content: space-evenly; }
   .navbar .nav-items {
     width: 85%; }
 
