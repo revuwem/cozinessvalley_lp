@@ -77,6 +77,12 @@ ul {
     .navbar .nav-items .nav-link:hover {
       color: #eeeeee; }
 
+svg {
+  fill: #cacaca; }
+
+svg:hover {
+  fill: #eeeeee; }
+
 .bg-navy {
   background: #252d35; }
 

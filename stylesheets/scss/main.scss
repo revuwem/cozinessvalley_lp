@@ -146,16 +146,22 @@ ul {
     flex-grow: 2;
 
     .nav-link{
-      color: $base-light-color;
+      color: $base-light-color;      
     }
 
     .nav-link:hover{
-      color: $base-lighter-color;
+      color: $base-lighter-color;      
     }
   }
 }
 
+svg{
+  fill: $base-light-color;
+}
 
+svg:hover{
+  fill: $base-lighter-color;
+}
 
 .bg-navy {
   background: rgba(37, 45, 53, 1);
