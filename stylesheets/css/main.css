@@ -298,7 +298,7 @@ a.btn.brand-btn:hover {
     .timelines .timeline time {
       flex: 1 2 30%;
       font-size: 3rem;
-      color: #cacaca;
+      color: #eeeeee;
       line-height: 41px;
       /*150% of base line-height*/
       background-color: #ff8806;
