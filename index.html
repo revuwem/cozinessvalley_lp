@@ -356,15 +356,13 @@
   <script>
     window.onscroll = function () { fixHeader() };
     var header=document.getElementById('header');    
-    var headerOffsetTop = header.offsetTop;
+    var headerOffsetTop = header.offsetTop;  
 
     function fixHeader() {
       if (window.pageYOffset >= headerOffsetTop) {        
         header.classList.add("fixed-top");
-        header.classList.add("bg-navy");
       } else {        
-        header.classList.remove("fixed-top");
-        header.classList.remove("bg-navy");
+        header.classList.remove("fixed-top");                
       }
     }
   </script>
