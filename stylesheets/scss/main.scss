@@ -164,9 +164,8 @@ ul {
       -o-transition: 0.15s ease-in;
       transition: 0.15s ease-in;
     }
-    
-    .nav-link:hover:after,
-    .nav-link:focus:after,
+        
+   
     .nav-link.active:after {
       visibility: visible;
       -webkit-transform: scaleX(1);

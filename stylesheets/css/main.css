@@ -102,8 +102,6 @@ ul {
       -webkit-transition: 0.15s ease-in;
       -o-transition: 0.15s ease-in;
       transition: 0.15s ease-in; }
-    .navbar .nav-items .nav-link:hover:after,
-    .navbar .nav-items .nav-link:focus:after,
     .navbar .nav-items .nav-link.active:after {
       visibility: visible;
       -webkit-transform: scaleX(1);
