@@ -1,27 +1,6 @@
 @charset 'utf-8';
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@700&display=swap");
 
-/* Color Theme Swatches in Hex */
-$coziness-valley-brand-colors-1-hex: #07080a;
-$coziness-valley-brand-colors-2-hex: #394a59;
-$coziness-valley-brand-colors-3-hex: #8a9ba6;
-$coziness-valley-brand-colors-4-hex: #d5e7f2;
-$coziness-valley-brand-colors-5-hex: #a6483f;
-
-/* Color Theme Swatches in RGBA */
-$coziness-valley-brand-colors-1-rgba: rgba(7, 8, 10, 1);
-$coziness-valley-brand-colors-2-rgba: rgba(57, 74, 89, 1);
-$coziness-valley-brand-colors-3-rgba: rgba(138, 155, 166, 1);
-$coziness-valley-brand-colors-4-rgba: rgba(213, 231, 242, 1);
-$coziness-valley-brand-colors-5-rgba: rgba(166, 72, 63, 1);
-
-/* Color Theme Swatches in HSLA */
-$coziness-valley-brand-colors-1-hsla: hsla(219, 17, 3, 1);
-$coziness-valley-brand-colors-2-hsla: hsla(208, 21, 28, 1);
-$coziness-valley-brand-colors-3-hsla: hsla(203, 13, 59, 1);
-$coziness-valley-brand-colors-4-hsla: hsla(202, 52, 89, 1);
-$coziness-valley-brand-colors-5-hsla: hsla(5, 44, 44, 1);
-
 /*Body text style*/
 $base-font-family: "Lora", serif;
 $base-font-size: 18px;
