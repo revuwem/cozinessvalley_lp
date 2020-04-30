@@ -217,13 +217,13 @@ section .row {
 #valley-overview {
   height: $base-section-height;
   background: $coziness-valley-brand-colors-3-hex
-    url("../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed;
+    url("../../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed;
 }
 
 /*Situation plan section*/
 #situation-plan {
   height: 100rem; /*min height for larger space on the small screens between section's blocks*/
-  background: url("../images/murmansk-situation-plan.png");
+  background: url("../../images/murmansk-situation-plan.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -393,7 +393,7 @@ a.btn.brand-btn {
 /*Schedule section*/
 #schedule{
   .row{
-    background: url("../images/transparent-situation-plan.png");
+    background: url("../../images/transparent-situation-plan.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
