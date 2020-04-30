@@ -65,6 +65,10 @@ ul {
   .navbar .nav-items {
     width: 85%; }
 
+#main-navbar a {
+  color: #eee;
+  font-family: "Roboto", sans-serif; }
+
 .bg-navy {
   background: #252d35; }
 

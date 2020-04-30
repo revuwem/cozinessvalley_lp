@@ -152,12 +152,11 @@ ul {
    }
 }
 
-// #main-navbar a {
-//   color: $base-light-color;
-//   font-size: 1.1em;
-//   font-weight: bold;
-//   text-transform: uppercase;
-// }
+#main-navbar a {
+  color: $base-light-color;  
+  font-family: $header-font-family;
+  
+}
 
 // @media (min-width: 992px) {
 //   .navbar {
