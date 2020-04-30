@@ -37,7 +37,8 @@ $base-list-padding: 1rem;
 $base-list-margin-bottom: 0;
 
 $base-dark-color: #1d1f21;
-$base-light-color: #eee;
+$base-light-color: rgb(202, 202, 202);
+$base-lighter-color: rgb(238, 238, 238);
 $navbar-bg-color: rgba(37, 45, 53, 1);
 $navbar-transparent-bg-color: rgba(37, 45, 53, 0.7);
 
@@ -120,8 +121,7 @@ ul {
 
 .navbar {
   padding: 0.7em 0.5em;
-  background: $navbar-bg-color;
-  color: $base-light-color;
+  background: $navbar-bg-color;  
   display: flex;
   flex-wrap: wrap;
 
@@ -142,14 +142,20 @@ ul {
   .nav-items {
     margin-left: 25px;
     font-size: 0.9em;
+    font-family: $header-font-family;
     flex-grow: 2;
+
+    .nav-link{
+      color: $base-light-color;
+    }
+
+    .nav-link:hover{
+      color: $base-lighter-color;
+    }
   }
 }
 
-#main-navbar a {
-  color: $base-light-color;
-  font-family: $header-font-family;
-}
+
 
 .bg-navy {
   background: rgba(37, 45, 53, 1);

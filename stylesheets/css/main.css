@@ -55,7 +55,6 @@ ul {
 .navbar {
   padding: 0.7em 0.5em;
   background: #252d35;
-  color: #eee;
   display: flex;
   flex-wrap: wrap; }
   .navbar .vendors-links {
@@ -71,11 +70,12 @@ ul {
   .navbar .nav-items {
     margin-left: 25px;
     font-size: 0.9em;
+    font-family: "Roboto", sans-serif;
     flex-grow: 2; }
-
-#main-navbar a {
-  color: #eee;
-  font-family: "Roboto", sans-serif; }
+    .navbar .nav-items .nav-link {
+      color: #cacaca; }
+    .navbar .nav-items .nav-link:hover {
+      color: #eeeeee; }
 
 .bg-navy {
   background: #252d35; }
@@ -168,12 +168,12 @@ section .row {
     margin: 0 auto;
     padding: 1rem 1rem 2rem 2rem;
     background-color: #1d1f21;
-    color: #eee; }
+    color: #cacaca; }
     #participants .participants-list .participants-list-item {
       max-width: 340px;
       margin: 1rem 0; }
       #participants .participants-list .participants-list-item h3 {
-        color: #eee; }
+        color: #cacaca; }
 
 @media only screen and (min-width: 720px) {
   #participants .participants-list {
@@ -270,7 +270,7 @@ a.btn.brand-btn {
     .timelines .timeline time {
       flex: 1 2 30%;
       font-size: 3rem;
-      color: #eee;
+      color: #cacaca;
       line-height: 41px;
       /*150% of base line-height*/
       background-color: #ff8806;
