@@ -31,7 +31,7 @@ $header-font-family: "Roboto", sans-serif;
 $header-color: #484c50;
 
 $base-section-height: 100vh;
-$base-section-padding: 3rem 0rem;
+$section-padding-top: 120px;
 
 $base-list-padding: 1rem;
 $base-list-margin-bottom: 0;
@@ -73,7 +73,7 @@ h2,
 h3 {
   color: $header-color;
   font-family: $header-font-family;
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
   line-height: 52px;
   margin: 27px 0;
 }
@@ -109,50 +109,49 @@ ul {
 
   video {
     width: 100%;
-  }  
+  }
 }
 
-.hero::after{
-  content: '';
+.hero::after {
+  content: "";
   display: block;
   clear: both;
 }
 
-.navbar {    
-   padding: 0.7em 0.5em;
-   background: $navbar-bg-color;
-   color: $base-light-color;
-   display: flex;
-   flex-wrap: wrap;
+.navbar {
+  padding: 0.7em 0.5em;
+  background: $navbar-bg-color;
+  color: $base-light-color;
+  display: flex;
+  flex-wrap: wrap;
 
-   .vendors-links{
-     flex-grow: 1;
-     max-width: 150px;
-     margin: 0;
-     display: flex;
-     justify-content: space-evenly;
-     font-size: 0.5rem;     
+  .vendors-links {
+    flex-grow: 1;
+    max-width: 150px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.5rem;
 
-     img{
-       width: 50px;
-       height: 50px;
-     }
-   }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
 
-   .nav-items{
-     margin-left: 25px;
-     font-size: 0.9em;
-     flex-grow: 2;
-   }
+  .nav-items {
+    margin-left: 25px;
+    font-size: 0.9em;
+    flex-grow: 2;
+  }
 }
 
 #main-navbar a {
-  color: $base-light-color;  
+  color: $base-light-color;
   font-family: $header-font-family;
-  
 }
 
-.bg-navy{
+.bg-navy {
   background: rgba(37, 45, 53, 1);
 }
 
@@ -191,7 +190,6 @@ section .row {
   }
 }
 
-
 @media (max-width: 767px) {
   #about {
     section {
@@ -218,7 +216,8 @@ section .row {
 #valley-overview {
   height: $base-section-height;
   background: $coziness-valley-brand-colors-3-hex
-    url("../../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed;
+    url("../../images/coziness-valley-overview.jpeg") center/cover no-repeat
+    fixed;
 }
 
 /*Situation plan section*/
@@ -282,7 +281,7 @@ section .row {
 
 /*Participants section*/
 #participants {
-  padding-top: 0;
+  padding-top: $section-padding-top;
 
   h2 {
     margin: 0;
@@ -328,57 +327,58 @@ a.btn.brand-btn {
   font-family: $header-font-family;
 }
 
-
 /*Prizes table styles*/
+#prizes {
+  padding-top: $section-padding-top;
+  .prizes-list {
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 2rem;
+    .prizes-list-item {
+      max-width: 340px;
+      margin: 1rem 0;
 
-.prizes-list {
-  position: relative;
-  margin: 0 auto;
-  padding: 1rem 1rem 2rem 2rem;
-  .prizes-list-item {
-    max-width: 340px;
-    margin: 1rem 0;
+      table {
+        font-size: 1.3rem;
+        border-spacing: 0 9px;
+        border-collapse: separate;
 
-    table {
-      font-size: 1.3rem;
-      border-spacing: 0 9px;
-      border-collapse: separate;
+        th {
+          color: $header-color;
+          font-size: 1.5rem; /*Bootstrap's h3 font-size*/
+          font-family: $header-font-family;
+          line-height: 52px;
+          margin: 27px 0;
+        }
 
-      th {
-        color: $header-color;
-        font-size: 1.5rem; /*Bootstrap's h3 font-size*/
-        font-family: $header-font-family;
-        line-height: 52px;
-        margin: 27px 0;
-      }
-
-      td {
-        min-width: 130px;
+        td {
+          min-width: 130px;
+        }
       }
     }
   }
-}
 
-.prizes-list::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 60px;
-  height: 10px;
-  background-color: #ff8806;
-}
+  .prizes-list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 60px;
+    height: 10px;
+    background-color: #ff8806;
+  }
 
-.prizes-list::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 60px;
-  height: 10px;
-  background-color: #ff8806;
+  .prizes-list::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 10px;
+    background-color: #ff8806;
+  }
 }
 
 @media only screen and (min-width: 720px) {
@@ -392,38 +392,39 @@ a.btn.brand-btn {
 }
 
 /*Schedule section*/
-#schedule{
-  .row{
+#schedule {
+  padding-top: $section-padding-top;
+  .row {
     background: url("../../images/transparent-situation-plan.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
   }
 }
 
 .timelines {
   min-width: 600px;
   max-width: 800px;
-  padding: 0 2rem;  
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
 
   .timeline {
     width: 60%;
-    min-height: 130px;    
+    min-height: 130px;
     display: flex;
     justify-content: flex-end;
     background-color: rgba(255, 255, 255, 0.7);
 
-    p {      
+    p {
       margin: 0;
       padding: 1rem;
       flex: 2 1 60%;
-      text-align: right;  
-      
-      strong{
-        color: $header-color;  
-      font-family: $header-font-family; 
+      text-align: right;
+
+      strong {
+        color: $header-color;
+        font-family: $header-font-family;
       }
     }
 
@@ -441,7 +442,7 @@ a.btn.brand-btn {
     flex-direction: row-reverse;
     align-self: flex-end;
 
-    p{
+    p {
       text-align: left;
     }
 
@@ -451,26 +452,28 @@ a.btn.brand-btn {
     }
   }
 
-  .timeline:nth-child(1)::before{
-    content: '';
+  .timeline:nth-child(1)::before {
+    content: "";
     position: relative;
     top: 0;
     right: 0;
   }
 }
 
-@media only screen and (max-width: 719px){
-  .timelines{
+@media only screen and (max-width: 719px) {
+  .timelines {
     padding: 1rem;
     min-width: auto;
-    .timeline{
+    .timeline {
       width: 100%;
     }
   }
 }
 
 /*Juri list*/
-.juri-list{
-  max-width: 800px;
+#juri {
+  padding-top: $section-padding-top;
+  .juri-list {
+    max-width: 800px;
+  }
 }
-

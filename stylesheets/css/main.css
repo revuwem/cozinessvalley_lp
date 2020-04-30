@@ -48,7 +48,7 @@ ul {
     width: 100%; }
 
 .hero::after {
-  content: '';
+  content: "";
   display: block;
   clear: both; }
 
@@ -160,7 +160,7 @@ section .row {
       width: 650px; } }
 /*Participants section*/
 #participants {
-  padding-top: 0; }
+  padding-top: 120px; }
   #participants h2 {
     margin: 0;
     border-top: 3px solid #1d1f21; }
@@ -192,46 +192,46 @@ a.btn.brand-btn {
   font-family: "Roboto", sans-serif; }
 
 /*Prizes table styles*/
-.prizes-list {
-  position: relative;
-  margin: 0 auto;
-  padding: 1rem 1rem 2rem 2rem; }
-  .prizes-list .prizes-list-item {
-    max-width: 340px;
-    margin: 1rem 0; }
-    .prizes-list .prizes-list-item table {
-      font-size: 1.3rem;
-      border-spacing: 0 9px;
-      border-collapse: separate; }
-      .prizes-list .prizes-list-item table th {
-        color: #484c50;
-        font-size: 1.5rem;
-        /*Bootstrap's h3 font-size*/
-        font-family: "Roboto", sans-serif;
-        line-height: 52px;
-        margin: 27px 0; }
-      .prizes-list .prizes-list-item table td {
-        min-width: 130px; }
-
-.prizes-list::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 60px;
-  height: 10px;
-  background-color: #ff8806; }
-
-.prizes-list::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 60px;
-  height: 10px;
-  background-color: #ff8806; }
+#prizes {
+  padding-top: 120px; }
+  #prizes .prizes-list {
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 2rem; }
+    #prizes .prizes-list .prizes-list-item {
+      max-width: 340px;
+      margin: 1rem 0; }
+      #prizes .prizes-list .prizes-list-item table {
+        font-size: 1.3rem;
+        border-spacing: 0 9px;
+        border-collapse: separate; }
+        #prizes .prizes-list .prizes-list-item table th {
+          color: #484c50;
+          font-size: 1.5rem;
+          /*Bootstrap's h3 font-size*/
+          font-family: "Roboto", sans-serif;
+          line-height: 52px;
+          margin: 27px 0; }
+        #prizes .prizes-list .prizes-list-item table td {
+          min-width: 130px; }
+  #prizes .prizes-list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 60px;
+    height: 10px;
+    background-color: #ff8806; }
+  #prizes .prizes-list::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 10px;
+    background-color: #ff8806; }
 
 @media only screen and (min-width: 720px) {
   .prizes-list {
@@ -239,11 +239,13 @@ a.btn.brand-btn {
     .prizes-list .prizes-list-item {
       margin: 1rem 3rem; } }
 /*Schedule section*/
-#schedule .row {
-  background: url("../../images/transparent-situation-plan.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right; }
+#schedule {
+  padding-top: 120px; }
+  #schedule .row {
+    background: url("../../images/transparent-situation-plan.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right; }
 
 .timelines {
   min-width: 600px;
@@ -282,7 +284,7 @@ a.btn.brand-btn {
       display: flex;
       justify-content: flex-end; }
   .timelines .timeline:nth-child(1)::before {
-    content: '';
+    content: "";
     position: relative;
     top: 0;
     right: 0; }
@@ -294,7 +296,9 @@ a.btn.brand-btn {
     .timelines .timeline {
       width: 100%; } }
 /*Juri list*/
-.juri-list {
-  max-width: 800px; }
+#juri {
+  padding-top: 120px; }
+  #juri .juri-list {
+    max-width: 800px; }
 
 /*# sourceMappingURL=main.css.map */
