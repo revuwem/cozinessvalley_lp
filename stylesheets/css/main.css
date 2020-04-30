@@ -1,76 +1,373 @@
-/*
-Error: Undefined variable: "$coziness-valley-brand-colors-3-hex".
-        on line 233 of stylesheets/scss/main.scss
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@700&display=swap");
+/*Body text style*/
+/*Headers style*/
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/*Common Document Stylesheets*/
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; }
 
-228: }
-229: 
-230: /*Valley overview section*\/
-231: #valley-overview {
-232:   height: $base-section-height;
-233:   background: $coziness-valley-brand-colors-3-hex
-234:     url("../../images/coziness-valley-overview.jpeg") center/cover no-repeat
-235:     fixed;
-236: }
-237: 
-238: /*Situation plan section*\/
+body {
+  color: #1d1f21;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  line-height: 27px;
+  /*150% of font-size*/ }
 
-Backtrace:
-stylesheets/scss/main.scss:233
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/tree/node.rb:50:in `perform'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/tree/list_literal.rb:75:in `map'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/script/tree/node.rb:50:in `perform'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$coziness-valley-brand-colors-3-hex\".\A         on line 233 of stylesheets/scss/main.scss\A \A 228: }\A 229: \A 230: /*Valley overview section*/\A 231: #valley-overview {\A 232:   height: $base-section-height;\A 233:   background: $coziness-valley-brand-colors-3-hex\A 234:     url(\"../../images/coziness-valley-overview.jpeg\") center/cover no-repeat\A 235:     fixed;\A 236: }\A 237: \A 238: /*Situation plan section*/"; }
+h2,
+h3 {
+  color: #484c50;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  line-height: 52px;
+  margin: 27px 0; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.list-item {
+  width: 100%; }
+
+@media (min-width: 720px) {
+  .list-item {
+    width: 50%; } }
+@media (min-width: 1200px) {
+  .list-item {
+    width: 40%; } }
+/* Header Stylesheets */
+.hero {
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+  background: #252d35; }
+  .hero video {
+    width: 100%; }
+
+.hero::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.navbar {
+  padding: 0 0.5em;
+  background: #252d35;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .navbar .vendors-links {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 150px;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    font-size: 0.5rem; }
+    .navbar .vendors-links img {
+      width: 50px;
+      height: 50px; }
+  .navbar .nav-items {
+    margin-left: 25px;
+    font-size: 0.9em;
+    font-family: "Roboto", sans-serif;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2; }
+    .navbar .nav-items .nav-link {
+      color: #cacaca;
+      position: relative; }
+    .navbar .nav-items .nav-link:hover {
+      color: #eeeeee; }
+    .navbar .nav-items .nav-link:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background: #ff8806;
+      border-radius: 3px;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: 0.15s ease-in;
+      -o-transition: 0.15s ease-in;
+      transition: 0.15s ease-in; }
+    .navbar .nav-items .nav-link:hover:after,
+    .navbar .nav-items .nav-link:focus:after,
+    .navbar .nav-items .nav-link.active:after {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1); }
+
+svg {
+  fill: #cacaca; }
+
+svg:hover {
+  fill: #eeeeee; }
+
+.bg-navy {
+  background: #252d35; }
+
+/*Main Stylesheets*/
+main .container-fluid {
+  padding: 0; }
+
+section .row {
+  margin: 0; }
+
+/*About section*/
+#about {
+  position: relative;
+  margin: 3rem 0 5rem; }
+  #about section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 5rem 0 7rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #about section p {
+      max-width: 730px; }
+  #about section:nth-child(1)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 60px;
+    height: 10px;
+    background-color: #ff8806; }
+
+@media (max-width: 767px) {
+  #about section {
+    padding: 2rem 2rem 0 4rem; } }
+@media (max-width: 500px) {
+  #about section {
+    padding: 1rem 1rem 0 2rem; } }
+.brands img {
+  max-width: 100px; }
+
+/*Valley overview section*/
+#valley-overview {
+  height: 100vh;
+  background: #cacaca url("../../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed; }
+
+/*Situation plan section*/
+#situation-plan {
+  height: 100rem;
+  /*min height for larger space on the small screens between section's blocks*/
+  background: url("../../images/murmansk-situation-plan.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+  #situation-plan .row {
+    width: 100%;
+    height: 100%; }
+    #situation-plan .row .block {
+      padding: 2rem 1rem 2rem 2rem; }
+
+@media only screen and (min-width: 720px) {
+  #situation-plan .row .block {
+    padding: 2rem 2rem 2rem 7rem; } }
+@media only screen and (min-width: 1024px) {
+  #situation-plan {
+    height: 60rem;
+    background-size: contain;
+    background-position: right; }
+    #situation-plan .row {
+      max-width: 60%; }
+      #situation-plan .row .block {
+        margin: 0 auto;
+        padding: 2rem; }
+        #situation-plan .row .block p {
+          width: 470px; } }
+@media only screen and (min-width: 1280px) {
+  #situation-plan .row .block {
+    margin: 0 auto;
+    padding: 2rem 2rem 2rem 7rem; }
+    #situation-plan .row .block p {
+      width: 650px; } }
+/*Participants section*/
+#participants {
+  padding-top: 120px; }
+  #participants h2 {
+    margin: 0;
+    border-top: 3px solid #1d1f21; }
+  #participants .participants-list {
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 2rem;
+    background-color: #1d1f21;
+    color: #cacaca; }
+    #participants .participants-list .participants-list-item {
+      max-width: 340px;
+      margin: 1rem 0; }
+      #participants .participants-list .participants-list-item h3 {
+        color: #cacaca; }
+
+@media only screen and (min-width: 720px) {
+  #participants .participants-list {
+    padding: 1rem 1rem 2rem 2rem; }
+    #participants .participants-list .participants-list-item {
+      margin: 1rem 3rem; } }
+a.btn.brand-btn {
+  margin: 0;
+  border: 3px solid #1d1f21;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border-top: none;
+  color: #1d1f21;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: 0.05s;
+  -o-transition: 0.05s;
+  transition: 0.05s; }
+
+a.btn.brand-btn:hover {
+  background: #eeeeee; }
+
+/*Prizes table styles*/
+#prizes {
+  padding-top: 120px; }
+  #prizes .prizes-list {
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 2rem; }
+    #prizes .prizes-list .prizes-list-item {
+      max-width: 340px;
+      margin: 1rem 0; }
+      #prizes .prizes-list .prizes-list-item table {
+        font-size: 1.3rem;
+        border-spacing: 0 9px;
+        border-collapse: separate; }
+        #prizes .prizes-list .prizes-list-item table th {
+          color: #484c50;
+          font-size: 1.5rem;
+          /*Bootstrap's h3 font-size*/
+          font-family: "Roboto", sans-serif;
+          line-height: 52px;
+          margin: 27px 0; }
+        #prizes .prizes-list .prizes-list-item table td {
+          min-width: 130px; }
+  #prizes .prizes-list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 60px;
+    height: 10px;
+    background-color: #ff8806; }
+  #prizes .prizes-list::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 10px;
+    background-color: #ff8806; }
+
+@media only screen and (min-width: 720px) {
+  .prizes-list {
+    padding: 1rem 1rem 2rem 2rem; }
+    .prizes-list .prizes-list-item {
+      margin: 1rem 3rem; } }
+/*Schedule section*/
+#schedule {
+  padding-top: 120px; }
+  #schedule .row {
+    background: url("../../images/transparent-situation-plan.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right; }
+
+.timelines {
+  min-width: 600px;
+  max-width: 800px;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .timelines .timeline {
+    width: 60%;
+    min-height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.7); }
+    .timelines .timeline p {
+      margin: 0;
+      padding: 1rem;
+      -webkit-box-flex: 2;
+      -ms-flex: 2 1 60%;
+      flex: 2 1 60%;
+      text-align: right; }
+      .timelines .timeline p strong {
+        color: #484c50;
+        font-family: "Roboto", sans-serif; }
+    .timelines .timeline time {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 2 30%;
+      flex: 1 2 30%;
+      font-size: 3rem;
+      color: #eeeeee;
+      line-height: 41px;
+      /*150% of base line-height*/
+      background-color: #ff8806;
+      padding: 1rem 0.5rem; }
+  .timelines .timeline:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+    .timelines .timeline:nth-child(even) p {
+      text-align: left; }
+    .timelines .timeline:nth-child(even) time {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .timelines .timeline:nth-child(1)::before {
+    content: "";
+    position: relative;
+    top: 0;
+    right: 0; }
+
+@media only screen and (max-width: 719px) {
+  .timelines {
+    padding: 1rem;
+    min-width: auto; }
+    .timelines .timeline {
+      width: 100%; } }
+/*Juri list*/
+#juri {
+  padding-top: 120px; }
+  #juri .juri-list {
+    max-width: 800px; }
+
+/*# sourceMappingURL=main.css.map */
