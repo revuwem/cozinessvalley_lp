@@ -53,7 +53,7 @@ ul {
   clear: both; }
 
 .navbar {
-  padding: 0.7em 0.5em;
+  padding: 0 0.5em;
   background: #252d35;
   display: flex;
   flex-wrap: wrap; }
@@ -213,7 +213,11 @@ a.btn.brand-btn {
   border-top: none;
   color: #1d1f21;
   font-size: 1.5rem;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  transition: 0.05s; }
+
+a.btn.brand-btn:hover {
+  background: #eeeeee; }
 
 /*Prizes table styles*/
 #prizes {

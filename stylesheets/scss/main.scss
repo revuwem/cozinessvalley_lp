@@ -41,6 +41,7 @@ $base-light-color: rgb(202, 202, 202);
 $base-lighter-color: rgb(238, 238, 238);
 $navbar-bg-color: rgba(37, 45, 53, 1);
 $navbar-transparent-bg-color: rgba(37, 45, 53, 0.7);
+$brand-color: #ff8806;
 
 @mixin border($width, $style, $color) {
   border: $width $style $color;
@@ -120,7 +121,7 @@ ul {
 }
 
 .navbar {
-  padding: 0.7em 0.5em;
+  padding: 0 0.5em;
   background: $navbar-bg-color;  
   display: flex;
   flex-wrap: wrap;
@@ -360,7 +361,14 @@ a.btn.brand-btn {
   color: $base-dark-color;
   font-size: 1.5rem;
   font-family: $header-font-family;
+  transition: 0.05s;
 }
+
+a.btn.brand-btn:hover{
+  background: $base-lighter-color;  
+}
+
+
 
 /*Prizes table styles*/
 #prizes {
