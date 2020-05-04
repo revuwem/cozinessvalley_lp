@@ -221,10 +221,12 @@ section .row {
     #participants .participants-list .participants-list-item {
       margin: 1rem 3rem; } }
 #participation-steps .participation-steps-list {
+  max-width: 1000px;
   padding: 0;
   list-style: none; }
   #participation-steps .participation-steps-list .participation-steps-item {
     min-width: 300px;
+    max-width: 350px;
     flex: 1 0 33%;
     padding: 1rem; }
   #participation-steps .participation-steps-list .participation-step-number {
