@@ -438,13 +438,7 @@ a.btn.brand-btn:hover{
 
 /*Schedule section*/
 #schedule {
-  padding-top: $section-padding-top;
-  .row {
-    background: url("../../images/transparent-situation-plan.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-  }
+  padding-top: $section-padding-top; 
 }
 
 .timelines {
