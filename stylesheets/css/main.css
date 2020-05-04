@@ -228,7 +228,7 @@ section .row {
     min-width: 300px;
     max-width: 350px;
     flex: 1 0 33%;
-    padding: 1rem; }
+    padding: 1.5rem; }
   #participation-steps .participation-steps-list .participation-step-number {
     background: #ff8806;
     width: 7rem;
@@ -243,16 +243,16 @@ section .row {
     font-family: "Roboto", sans-serif;
     color: #fff;
     text-align: center;
-    margin-bottom: 1rem; }
+    margin-bottom: 1.5rem; }
 
 a.btn.brand-btn {
   margin: 0;
-  border: 3px solid #1d1f21;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
+  border: 2px solid #1d1f21;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   color: #1d1f21;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
   -webkit-transition: 0.05s;
   -o-transition: 0.05s;
