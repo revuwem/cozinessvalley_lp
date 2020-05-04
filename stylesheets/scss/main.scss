@@ -210,6 +210,13 @@ section .row {
     p {
       max-width: 730px;
     }
+    ul {
+      margin-left: 3rem;
+      list-style-type: square;
+      li::marker{
+        color: $brand-color;
+      }
+    }
   }
 
   section:nth-child(1)::before {
@@ -385,7 +392,7 @@ section .row {
 }
 
 a.btn.brand-btn {
-  margin:0;
+  margin: 0;
   @include border(2px, solid, $base-dark-color);
   @include border-radius(10px);
   box-shadow: 0px 5px 10px #bbb;

@@ -138,6 +138,11 @@ section .row {
     flex-direction: column; }
     #about section p {
       max-width: 730px; }
+    #about section ul {
+      margin-left: 3rem;
+      list-style-type: square; }
+      #about section ul li::marker {
+        color: #ff8806; }
   #about section:nth-child(1)::before {
     content: "";
     display: block;
