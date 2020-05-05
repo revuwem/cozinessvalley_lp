@@ -1,0 +1,15 @@
+.list-item {
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .list-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-item {
+    width: 40%;
+  }
+}
