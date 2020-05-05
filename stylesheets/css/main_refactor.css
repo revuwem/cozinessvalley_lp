@@ -13,7 +13,7 @@ Error: Undefined variable: "$base-dark-color".
 10: @import 'components/hero';
 11: 
 12: @import 'layout/header';
-13: 
+13: @import 'layout/main';
 
 Backtrace:
 stylesheets/sass/base/_base.scss:8
@@ -84,4 +84,4 @@ C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$base-dark-color\".\A         on line 8 of stylesheets/sass/base/_base.scss\A         from line 3 of stylesheets/sass/main_refactor.scss\A \A 3: @import 'base/base';\A 4: @import 'base/fonts';\A 5: @import 'base/reset';\A 6: @import 'base/typography';\A 7: \A 8: @import 'components/navbar';\A 9: @import 'components/list';\A 10: @import 'components/hero';\A 11: \A 12: @import 'layout/header';\A 13: "; }
+  content: "Error: Undefined variable: \"$base-dark-color\".\A         on line 8 of stylesheets/sass/base/_base.scss\A         from line 3 of stylesheets/sass/main_refactor.scss\A \A 3: @import 'base/base';\A 4: @import 'base/fonts';\A 5: @import 'base/reset';\A 6: @import 'base/typography';\A 7: \A 8: @import 'components/navbar';\A 9: @import 'components/list';\A 10: @import 'components/hero';\A 11: \A 12: @import 'layout/header';\A 13: @import 'layout/main';"; }
