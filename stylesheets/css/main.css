@@ -114,9 +114,6 @@ svg {
 svg:hover {
   fill: #eeeeee; }
 
-.bg-navy {
-  background: #252d35; }
-
 /*Main Stylesheets*/
 main .container-fluid {
   padding: 0; }
