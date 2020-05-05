@@ -24,3 +24,11 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+svg {
+  fill: $base-light-color;
+}
+
+svg:hover {
+  fill: $base-lighter-color;
+}
