@@ -1,0 +1,58 @@
+/*Situation plan section*/
+#situation-plan {
+    height: 100rem; /*min height for larger space on the small screens between section's blocks*/
+    background: url("../../images/murmansk-situation-plan.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    .row {
+      width: 100%;
+      height: 100%;
+      .block {
+        padding: 2rem 1rem 2rem 2rem;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 720px) {
+    #situation-plan {
+      .row {
+        .block {
+          padding: 2rem 2rem 2rem 7rem;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    #situation-plan {
+      height: 60rem;
+      background-size: contain;
+      background-position: right;
+      .row {
+        max-width: 60%;
+        .block {
+          margin: 0 auto;
+          padding: 2rem;
+          p {
+            width: 470px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    #situation-plan {
+      .row {
+        .block {
+          margin: 0 auto;
+          padding: 2rem 2rem 2rem 7rem;
+          p {
+            width: 650px;
+          }
+        }
+      }
+    }
+  }
