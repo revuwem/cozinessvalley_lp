@@ -1,0 +1,64 @@
+/*Prizes table styles*/
+#prizes {
+    padding-top: $section-padding-top;
+    .prizes-list {
+      position: relative;
+      margin: 0 auto;
+      padding: 1rem 1rem 2rem 2rem;
+      .prizes-list-item {
+        max-width: 340px;
+        margin: 1rem 3rem;
+  
+        table {
+          font-size: 1.3rem;
+          border-spacing: 0 9px;
+          border-collapse: separate;
+  
+          th {
+            color: $header-color;
+            font-size: 1.5rem; /*Bootstrap's h3 font-size*/
+            font-family: $header-font-family;
+            line-height: 52px;
+            margin: 27px 0;
+          }
+  
+          td {
+            min-width: 130px;
+          }
+        }
+      }
+    }
+  
+    .prizes-list::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 60px;
+      height: 10px;
+      background-color: #ff8806;
+    }
+  
+    .prizes-list::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 60px;
+      height: 10px;
+      background-color: #ff8806;
+    }
+  }
+  
+  @media only screen and (min-width: 720px) {
+    .prizes-list {
+      padding: 1rem 1rem 2rem 2rem;
+  
+      .prizes-list-item {
+        margin: 1rem 3rem;
+      }
+    }
+  }
+  
