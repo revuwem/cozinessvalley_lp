@@ -4,7 +4,8 @@
 html {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
 
 body {
   color: #1d1f21;
@@ -29,7 +30,7 @@ svg {
   fill: #cacaca; }
 
 svg:hover {
-  fill: #eeeeee; }
+  fill: #fafafa; }
 
 .navbar {
   padding: 0 0.5em;
@@ -66,7 +67,7 @@ svg:hover {
       color: #cacaca;
       position: relative; }
     .navbar .nav-items .nav-link:hover {
-      color: #eeeeee; }
+      color: #fafafa; }
     .navbar .nav-items .nav-link:after {
       content: "";
       position: absolute;
@@ -113,7 +114,7 @@ a.btn.brand-btn {
   transition: 0.05s; }
 
 a.btn.brand-btn:hover {
-  background: #eeeeee; }
+  background: #fafafa; }
 
 .hero {
   width: 100%;
@@ -345,7 +346,7 @@ main .container-fluid {
       -ms-flex: 1 2 30%;
       flex: 1 2 30%;
       font-size: 3rem;
-      color: #eeeeee;
+      color: #fafafa;
       line-height: 41px;
       /*150% of base line-height*/
       background-color: #ff8806;
