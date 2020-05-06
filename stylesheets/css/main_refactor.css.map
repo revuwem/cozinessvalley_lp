@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AACQ,gGAAwF;ACDhG,mBAAmB;AAInB,iBAAiB",
-"sources": ["../sass/base/_fonts.scss","../sass/utilities/_variables.scss"],
-"names": [],
-"file": "main_refactor.css"
-}
