@@ -33,3 +33,7 @@ svg {
 svg:hover {
   fill: $base-lighter-color;
 }
+
+.bg-none-fixed{
+  background-attachment: unset;
+}

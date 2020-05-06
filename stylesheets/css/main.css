@@ -32,6 +32,9 @@ svg {
 svg:hover {
   fill: #fafafa; }
 
+.bg-none-fixed {
+  background-attachment: unset; }
+
 .navbar {
   padding: 0 0.5em;
   background: #252d35;
