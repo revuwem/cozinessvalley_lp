@@ -156,9 +156,6 @@ section .row {
 @media (max-width: 500px) {
   #about section {
     padding: 1rem 1rem 0 2rem; } }
-.brands img {
-  max-width: 100px; }
-
 /*Valley overview section*/
 #valley-overview {
   height: 100vh;
