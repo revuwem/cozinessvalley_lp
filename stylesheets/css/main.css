@@ -32,7 +32,7 @@ svg {
 svg:hover {
   fill: #fafafa; }
 
-.bg-none-fixed {
+.bg-not-fixed {
   background-attachment: unset; }
 
 .navbar {
