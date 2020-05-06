@@ -14,3 +14,9 @@ $(".nav-items .nav-link").on("click", function () {
     $(".nav-items").find(".active").removeClass("active");
     $(this).addClass("active");
 });
+
+//Safari browser detection
+if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) 
+{
+   document.getElementsByTagName("BODY")[0].className += " safari";
+}
