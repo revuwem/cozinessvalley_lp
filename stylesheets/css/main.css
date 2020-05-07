@@ -114,7 +114,7 @@ a.btn.brand-btn {
   transition: 0.05s; }
 
 a.btn.brand-btn:hover {
-  background: #fafafa; }
+  background: linear-gradient(to top, #cacaca, #fafafa); }
 
 .hero {
   width: 100%;

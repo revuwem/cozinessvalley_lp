@@ -12,5 +12,5 @@ a.btn.brand-btn {
   }
   
   a.btn.brand-btn:hover {
-    background: $base-lighter-color;
+    background: linear-gradient(to top, $base-light-color, $base-lighter-color);
   }
