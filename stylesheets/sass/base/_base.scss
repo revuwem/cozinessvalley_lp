@@ -1,0 +1,36 @@
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  color: $base-dark-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: 27px; /*150% of font-size*/
+}
+
+h2,
+h3 {
+  color: $header-color;
+  font-family: $header-font-family;
+  font-size: 1.5rem;
+  line-height: 52px;
+  margin: 27px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+svg {
+  fill: $base-light-color;
+}
+
+svg:hover {
+  fill: $base-lighter-color;
+}
+

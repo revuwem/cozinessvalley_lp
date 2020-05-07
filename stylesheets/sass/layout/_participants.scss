@@ -1,0 +1,37 @@
+/*Participants section*/
+#participants {
+    padding-top: $section-padding-top;
+  
+    h2 {
+      margin: 0;
+      border-top: 3px solid $base-dark-color;
+    }
+  
+    .participants-list {
+      margin: 0 auto;
+      padding: 1rem 1rem 2rem 2rem;
+      background-color: $base-dark-color;
+      color: $base-light-color;
+  
+      .participants-list-item {
+        max-width: 340px;
+        margin: 1rem 0;
+  
+        h3 {
+          color: $base-light-color;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width: 720px) {
+    #participants {
+      .participants-list {
+        padding: 1rem 1rem 2rem 2rem;
+  
+        .participants-list-item {
+          margin: 1rem 3rem;
+        }
+      }
+    }
+  }

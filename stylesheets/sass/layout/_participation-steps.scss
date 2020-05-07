@@ -1,0 +1,32 @@
+#participation-steps {
+    padding-top: 120px;
+    .participation-steps-list {
+      max-width: 1000px;
+      padding: 0;
+      list-style: none;
+  
+      .participation-steps-item {
+        min-width: 300px;
+        max-width: 350px;
+        flex: 1 0 33%;
+        padding: 1.5rem;
+      }
+  
+      .participation-step-number {
+        background: $brand-color;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        line-height: 7rem;
+        font-size: 52px;
+        font-family: $header-font-family;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
