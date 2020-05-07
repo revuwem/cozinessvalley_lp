@@ -32,9 +32,6 @@ svg {
 svg:hover {
   fill: #fafafa; }
 
-.bg-not-fixed {
-  background-attachment: unset; }
-
 .navbar {
   padding: 0 0.5em;
   background: #252d35;
@@ -176,6 +173,8 @@ main .container-fluid {
 #valley-overview {
   height: 100vh;
   background: #cacaca url("../../images/coziness-valley-overview.jpeg") center/cover no-repeat fixed; }
+  #valley-overview.bg-not-fixed {
+    background-attachment: local; }
 
 /*Situation plan section*/
 #situation-plan {

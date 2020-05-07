@@ -4,4 +4,9 @@
   background: $base-light-color
     url("../../images/coziness-valley-overview.jpeg") center/cover no-repeat
     fixed;
+
+  &.bg-not-fixed{
+    background-attachment: local;
+  }
 }
+
