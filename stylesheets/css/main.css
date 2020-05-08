@@ -400,4 +400,9 @@ main .container-fluid {
   #contacts a:active {
     text-decoration: underline; }
 
+footer {
+  height: 70px;
+  background-color: #cacaca;
+  font-size: 1rem; }
+
 /*# sourceMappingURL=main.css.map */
