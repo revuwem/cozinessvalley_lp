@@ -403,6 +403,7 @@ main .container-fluid {
       text-decoration: underline; }
 
 footer {
+  margin-top: 70px;
   height: 70px;
   background-color: #cacaca;
   font-size: 1rem; }
