@@ -390,4 +390,14 @@ main .container-fluid {
   #juri .juri-list {
     max-width: 800px; }
 
+#contacts p {
+  max-width: 300px; }
+#contacts a {
+  color: #1d1f21;
+  text-decoration: none; }
+  #contacts a:hover, #contacts a:focus {
+    color: #ff8806; }
+  #contacts a:active {
+    text-decoration: underline; }
+
 /*# sourceMappingURL=main.css.map */

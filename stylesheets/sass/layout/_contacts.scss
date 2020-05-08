@@ -1,0 +1,19 @@
+#contacts{
+    p{
+        max-width: 300px;
+    }
+
+    a{
+        color: $base-dark-color;
+        text-decoration: none;
+
+        &:hover,
+        &:focus{
+            color: $brand-color;
+        }
+
+        &:active{            
+            text-decoration: underline;
+        }
+    }
+}
