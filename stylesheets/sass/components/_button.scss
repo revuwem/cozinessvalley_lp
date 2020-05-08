@@ -1,16 +1,24 @@
 a.btn.brand-btn {
     margin: 0;
     @include border(2px, solid, $base-dark-color);
-    @include border-radius(10px);
-    box-shadow: 0px 5px 10px #bbb;
+    @include border-radius(10px);    
     color: $base-dark-color;
     font-size: 1.2rem;
     font-family: $header-font-family;
     -webkit-transition: 0.05s;
     -o-transition: 0.05s;
     transition: 0.05s;
+
+    &:hover,
+    &:focus{
+      box-shadow: 
+      0 0 0 3px #fff,
+      0 0 0 6px $brand-color;
+    }
+
+    &:active{
+      background: $base-light-color;      
+    }
   }
   
-  a.btn.brand-btn:hover {
-    background: linear-gradient(to top, $base-light-color, $base-lighter-color);
-  }
+ 
