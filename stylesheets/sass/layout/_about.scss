@@ -20,26 +20,16 @@
             color: $brand-color;
         }
     }
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 35px;
-        right: 0;
-        width: 60px;
-        height: 10px;
-        background-color: #ff8806;
-    }
 }
 
 @media (max-width: 767px) {
     #about {
-        padding: 2rem 2rem 0 4rem;
+        padding: 120px 2rem 0 4rem;
     }
 }
 
 @media (max-width: 500px) {
     #about {
-        padding: 1rem 1rem 0 2rem;
+        padding: 120px 1rem 0 2rem;
     }
 }
