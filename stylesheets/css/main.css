@@ -146,18 +146,12 @@ a.btn.brand-btn:active {
 .hero {
   width: 100%;
   max-height: 90vh;
-  overflow: hidden;
   background: #252d35;
+  overflow: hidden;
 }
 
 .hero video {
   width: 100%;
-}
-
-.hero::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 main {
