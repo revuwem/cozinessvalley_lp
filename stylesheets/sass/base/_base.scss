@@ -14,16 +14,16 @@ body {
 
 h2,
 h3 {
+  margin: 27px 0;
   color: $header-color;
   font-family: $header-font-family;
   font-size: 1.5rem;
-  line-height: 52px;
-  margin: 27px 0;
+  line-height: 52px;  
 }
 
 ul {
-  list-style: none;
   padding: 0;
+  list-style: none;  
 }
 
 svg {
