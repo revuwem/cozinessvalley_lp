@@ -1,7 +1,8 @@
-footer{
+footer{    
+    min-height: 70px;
     margin-top: 120px;
-    height: 70px;
-    background-color: $base-light-color;
 
     font-size: 1rem;
+
+    background-color: $base-light-color;   
 }
