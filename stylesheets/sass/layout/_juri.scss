@@ -3,6 +3,10 @@
     padding-top: $section-padding-top;
     .juri-list {
       max-width: 800px;
+
+      li{
+        max-width: 350px;
+      }
     }
   }
   

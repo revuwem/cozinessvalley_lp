@@ -520,6 +520,10 @@ main .container-fluid section .row {
   max-width: 800px;
 }
 
+#juri .juri-list li {
+  max-width: 350px;
+}
+
 #contacts {
   padding-top: 120px;
 }
