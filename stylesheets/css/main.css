@@ -521,6 +521,7 @@ main .container-fluid section .row {
 }
 
 #juri .juri-list li {
+  width: 50%;
   max-width: 350px;
 }
 
