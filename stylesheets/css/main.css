@@ -517,12 +517,27 @@ main .container-fluid section .row {
 }
 
 #juri .juri-list {
-  max-width: 800px;
+  padding: 1rem 1rem 2rem 2rem;
 }
 
 #juri .juri-list li {
-  width: 50%;
-  max-width: 350px;
+  width: 100%;
+  max-width: 730px;
+  padding: 1.5rem 2rem;
+}
+
+#juri .juri-list li img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#juri .juri-list li h3 {
+  margin: 15px 0;
 }
 
 #contacts {

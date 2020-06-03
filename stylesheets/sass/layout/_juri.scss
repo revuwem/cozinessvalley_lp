@@ -2,11 +2,29 @@
 #juri {
     padding-top: $section-padding-top;
     .juri-list {
-      max-width: 800px;
+      // max-width: 800px;
+      padding: 1rem 1rem 2rem 2rem;
 
       li{
-        width: 50%;
-        max-width: 350px;
+        width: 100%;
+        max-width: 730px;
+        padding: 1.5rem 2rem;
+        // max-width: 350px;
+
+        img{          
+          width: 200px;
+          height: 200px;
+          
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+}
+
+        h3{
+          margin: 15px 0;
+        }
       }
     }
   }
