@@ -538,6 +538,7 @@ main .container-fluid section .row {
 
 #juri .juri-list li h3 {
   margin: 15px 0;
+  margin-top: 0;
 }
 
 @media (max-width: 720px) {
