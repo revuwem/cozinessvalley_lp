@@ -154,6 +154,11 @@ a.btn.brand-btn:active {
   width: 100%;
 }
 
+.alert {
+  width: 100%;
+  max-width: 560px;
+}
+
 main {
   position: relative;
 }
