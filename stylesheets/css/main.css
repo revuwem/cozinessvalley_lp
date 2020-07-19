@@ -182,7 +182,7 @@ main .container-fluid section .row {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 120px 5rem 5rem 7rem;
+  padding: 20px 5rem 5rem 7rem;
 }
 
 #about p {
@@ -200,13 +200,13 @@ main .container-fluid section .row {
 
 @media (max-width: 767px) {
   #about {
-    padding: 120px 2rem 5rem 4rem;
+    padding: 20px 2rem 5rem 4rem;
   }
 }
 
 @media (max-width: 500px) {
   #about {
-    padding: 120px 1rem 5rem 2rem;
+    padding: 20px 1rem 5rem 2rem;
   }
 }
 
