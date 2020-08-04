@@ -573,6 +573,39 @@ main .container-fluid section .row {
   text-decoration: underline;
 }
 
+#faq div#faqContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#faq div#faqContainer .card .accordion-btn {
+  width: 100%;
+  padding: 25px;
+  color: #1d1f21;
+  font-size: 1.1em;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#faq div#faqContainer .card .accordion-btn:hover, #faq div#faqContainer .card .accordion-btn:active {
+  background-color: #ccc;
+}
+
+#faq div#faqContainer .card ol {
+  font-size: 1em;
+}
+
+#faq div#faqContainer .card ol li {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#faq div#faqContainer .card ol p {
+  margin-bottom: 1.5em;
+}
+
 footer {
   min-height: 70px;
   margin-top: 120px;

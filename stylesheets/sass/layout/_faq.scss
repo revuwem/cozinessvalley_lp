@@ -1,0 +1,32 @@
+#faq {
+    div#faqContainer {
+        max-width: 1000px;
+        margin: 0 auto;
+        .card {
+            .accordion-btn {
+                width: 100%;
+                padding: 25px;
+                color: $base-dark-color;
+                font-size: 1.1em;
+                // font-weight: bold;
+                border: none;
+                outline: none;
+                box-shadow: none;
+                &:hover,
+                &:active {
+                    background-color: #ccc;
+                }
+            }
+            ol {
+                font-size: 1em;
+                li {
+                    font-weight: bold;
+                    margin-bottom: 0.5em;
+                }
+                p {
+                    margin-bottom: 1.5em;
+                }
+            }
+        }
+    }
+}
