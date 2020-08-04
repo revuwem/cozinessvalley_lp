@@ -573,6 +573,10 @@ main .container-fluid section .row {
   text-decoration: underline;
 }
 
+#faq {
+  padding-top: 120px;
+}
+
 #faq div#faqContainer {
   max-width: 1000px;
   margin: 0 auto;
