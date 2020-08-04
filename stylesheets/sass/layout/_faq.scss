@@ -27,6 +27,17 @@
                 }
                 p {
                     margin-bottom: 1.5em;
+                    a {
+                        color: $base-dark-color;
+                        text-decoration: none;
+                        &:hover,
+                        &:focus {
+                            color: $brand-color;
+                        }
+                        &:active {
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
         }
