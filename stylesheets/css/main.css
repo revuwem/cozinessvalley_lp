@@ -590,7 +590,8 @@ main .container-fluid section .row {
 }
 
 #faq div#faqContainer .card .accordion-btn:hover, #faq div#faqContainer .card .accordion-btn:active {
-  background-color: #ccc;
+  color: #fff;
+  background-color: #ff8806;
 }
 
 #faq div#faqContainer .card ol {

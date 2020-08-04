@@ -14,7 +14,8 @@
                 box-shadow: none;
                 &:hover,
                 &:active {
-                    background-color: #ccc;
+                    color: #fff;
+                    background-color: $brand-color;
                 }
             }
             ol {
