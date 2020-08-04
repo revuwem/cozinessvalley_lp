@@ -652,6 +652,8 @@ main .container-fluid section .row {
 
 #faq div#faqContainer .card ol {
   font-size: 1em;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 #faq div#faqContainer .card ol li {
