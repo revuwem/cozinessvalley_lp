@@ -1,0 +1,47 @@
+#faq {
+    padding-top: $section-padding-top;
+    div#faqContainer {
+        max-width: 1000px;
+        margin: 0 auto;
+        .card {
+            .accordion-btn {
+                width: 100%;
+                padding: 25px;
+                color: $base-dark-color;
+                font-size: 1.1em;
+                // font-weight: bold;
+                border: none;
+                outline: none;
+                box-shadow: none;
+                &:hover,
+                &:active {
+                    color: #fff;
+                    background-color: $brand-color;
+                }
+            }
+            ol {
+                font-size: 1em;
+                padding-right: 2rem;
+                padding-left: 2rem;
+                li {
+                    font-weight: bold;
+                    margin-bottom: 0.5em;
+                }
+                p {
+                    margin-bottom: 1.5em;
+                    a {
+                        color: $base-dark-color;
+                        text-decoration: none;
+                        &:hover,
+                        &:focus {
+                            color: $brand-color;
+                        }
+                        &:active {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

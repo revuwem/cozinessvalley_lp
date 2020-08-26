@@ -1,21 +1,16 @@
 @charset 'utf-8';
-
 @import 'utilities/variables';
 @import 'utilities/functions';
 @import 'utilities/mixins';
 @import 'utilities/placeholders';
-
 @import 'base/base';
 @import 'base/fonts';
-@import 'base/reset';
 @import 'base/typography';
-
 @import 'components/navbar';
 @import 'components/list';
 @import 'components/button';
 @import 'components/hero';
-
-@import 'layout/header';
+@import 'components/alert';
 @import 'layout/main';
 @import 'layout/about';
 @import 'layout/valley-overview';
@@ -25,4 +20,6 @@
 @import 'layout/prizes';
 @import 'layout/schedule';
 @import 'layout/juri';
-
+@import 'layout/contacts';
+@import 'layout/faq';
+@import 'layout/footer';

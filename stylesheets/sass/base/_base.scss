@@ -1,36 +1,62 @@
 html {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-  color: $base-dark-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: 27px; /*150% of font-size*/
+    color: $base-dark-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: 27px;
+    /*150% of font-size*/
 }
 
 h2,
 h3 {
-  color: $header-color;
-  font-family: $header-font-family;
-  font-size: 1.5rem;
-  line-height: 52px;
-  margin: 27px 0;
+    margin: 27px 0;
+    color: $header-color;
+    font-family: $header-font-family;
+    font-size: 1.5rem;
+    line-height: 52px;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
+    padding: 0;
+    list-style: none;
 }
 
 svg {
-  fill: $base-light-color;
+    fill: $base-light-color;
 }
 
 svg:hover {
-  fill: $base-lighter-color;
+    fill: $base-lighter-color;
 }
 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+img::selection,
+time::selection,
+dl::selection,
+dt::selection,
+dd::selection,
+li::selection,
+div::selection {
+    background-color: #ccc;
+}
+
+p::selection,
+span::selection,
+b::selection,
+strong::selection,
+em::selection,
+a::selection {
+    color: #fff;
+    background-color: $brand-color;
+}
