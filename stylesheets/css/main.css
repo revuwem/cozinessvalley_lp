@@ -89,6 +89,15 @@ a::selection {
   background-color: #ff8806;
 }
 
+.cz-link {
+  color: #ff8806;
+}
+
+.cz-link:hover,
+.cz-link:visited {
+  color: #484c50;
+}
+
 .navbar {
   padding: 0 0.5em;
   background: #252d35;
@@ -517,7 +526,18 @@ main .container-fluid section .row {
   font-family: "Roboto", sans-serif;
 }
 
-.timelines .timeline time {
+.timelines .timeline p a.cz-link strong {
+  color: #ff8806;
+  text-decoration: none;
+}
+
+.timelines .timeline p a.cz-link strong:hover,
+.timelines .timeline p a.cz-link strong:visited {
+  color: #484c50;
+  text-decoration: none;
+}
+
+.timelines time {
   -webkit-box-flex: 1;
   -ms-flex: 1 2 30%;
   flex: 1 2 30%;
@@ -529,7 +549,7 @@ main .container-fluid section .row {
   padding: 1rem 0.5rem;
 }
 
-.timelines .timeline:nth-child(even) {
+.timeline:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
@@ -538,11 +558,11 @@ main .container-fluid section .row {
   align-self: flex-end;
 }
 
-.timelines .timeline:nth-child(even) p {
+.timeline:nth-child(even) p {
   text-align: left;
 }
 
-.timelines .timeline:nth-child(even) time {
+.timeline:nth-child(even) time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,7 +571,7 @@ main .container-fluid section .row {
   justify-content: flex-end;
 }
 
-.timelines .timeline:nth-child(1)::before {
+.timeline:nth-child(1)::before {
   content: "";
   position: relative;
   top: 0;

@@ -60,3 +60,12 @@ a::selection {
     color: #fff;
     background-color: $brand-color;
 }
+
+.cz-link {
+    color: $brand-color;
+}
+
+.cz-link:hover,
+.cz-link:visited {
+    color: #484c50;
+}
