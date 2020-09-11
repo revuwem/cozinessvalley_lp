@@ -218,6 +218,7 @@ a.btn.brand-btn:active {
 .alert {
   width: 100%;
   max-width: 560px;
+  border: thick solid #ff8806;
 }
 
 main {
