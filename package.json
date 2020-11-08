@@ -1,0 +1,20 @@
+{
+  "name": "cozinessvalley_lp",
+  "version": "1.0.0",
+  "description": "landing page for architectural competition",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files ['*.html', 'en/*.html', 'stylesheets/*'] ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revuwem/cozinessvalley_lp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/revuwem/cozinessvalley_lp/issues"
+  },
+  "homepage": "https://github.com/revuwem/cozinessvalley_lp#readme"
+}
