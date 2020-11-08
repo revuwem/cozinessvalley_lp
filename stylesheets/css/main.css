@@ -589,6 +589,10 @@ main .container-fluid section .row {
   }
 }
 
+#winners .carousel {
+  height: 400px;
+}
+
 /*Juri list*/
 #juri {
   padding-top: 120px;
