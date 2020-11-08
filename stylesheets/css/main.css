@@ -589,6 +589,10 @@ main .container-fluid section .row {
   }
 }
 
+#winners {
+  padding-top: 120px;
+}
+
 #winners .carousel {
   height: 400px;
 }
