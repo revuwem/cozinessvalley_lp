@@ -72,5 +72,9 @@
       -ms-transform: scaleX(1);
       transform: scaleX(1);
     }
+
+    .nav-link.highlight{
+      color: $brand-color;
+    }
   }
 }

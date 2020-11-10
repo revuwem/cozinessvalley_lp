@@ -168,6 +168,10 @@ a::selection {
   transform: scaleX(1);
 }
 
+.navbar .nav-items .nav-link.highlight {
+  color: #ff8806;
+}
+
 .list-item {
   width: 100%;
 }
